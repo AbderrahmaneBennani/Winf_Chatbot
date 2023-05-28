@@ -1,0 +1,57 @@
+version: "3.1"
+
+nlu:
+- intent: greet 
+  examples: |
+    - Hallo
+    - Servus
+   
+- intent: goodbye
+  examples: |
+    - Danke
+    - Vielen Dank
+    -Tschüss
+    
+- intent: affirm
+  examples: |
+    - Ja
+    - Das stimmt
+    - tatsächlich
+    - das klingt gut
+    - korrekt
+
+- intent: deny
+  examples: |
+    - nein
+    - das stimmt nicht
+    - niemals
+    - Ich glaube nicht
+    - nicht wirklich
+    
+- intent: mood_great
+  examples: |
+    - perfekt
+    - es geht mir gut
+    - es geht mir super
+    
+- intent: mood_unhappy
+  examples: |
+    - es geht mir nicht gut
+    - hilfe
+
+- intent: bot_challenge
+  examples: |
+    - bist du ein Bot?
+    - bist du ein Mensch?
+    - rede ich wie ein Bot?
+    - rede ich mit einem Menschen?
+    
+- intent: uni
+  examples: |
+    - welche Module soll ich dieses Semester belegen?
+    - was soll ich belegen?
+  
+
+
+
+
