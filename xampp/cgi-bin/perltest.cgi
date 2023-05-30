@@ -1,4 +1,4 @@
-#!"C:\xampp\perl\bin\perl.exe"
+#!"C:\Users\Revox\Desktop\Winf_Chatbot\Winf_Chatbot\xampp\perl\bin\perl.exe"
 
 print "Content-type: text/html\n\n";
 print '<html>';
