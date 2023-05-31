@@ -1,30 +1,36 @@
-version: "3.1"
+version: "2.0"
 
 stories:
-
-- story: happy path
+- story: Beispielnutzung - Zulassungsvoraussetzungen
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - intent: ask_admission_requirements
+  - action: utter_admission_requirements
+  - intent: goodbye
+  - action: utter_goodbye
 
-- story: sad path 1
+- story: Beispielnutzung - Studiengebühren
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - intent: ask_tuition_fees
+  - action: utter_tuition_fees
+  - intent: goodbye
+  - action: utter_goodbye
 
-- story: sad path 2
+- story: Beispielnutzung - Studiengänge
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
+  - intent: ask_programs_offered
+  - action: utter_programs_offered
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Standardunterhaltung
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: goodbye
   - action: utter_goodbye

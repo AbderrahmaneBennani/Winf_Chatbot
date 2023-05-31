@@ -1,13 +1,28 @@
-version: "3.1"
+vversion: "2.0"
 
 rules:
+- rule: Beispielfrage zur Zulassung
+  steps:
+  - intent: ask_admission_requirements
+  - action: utter_admission_requirements
 
-- rule: Say goodbye anytime the user says goodbye
+- rule: Beispielfrage zu den Studiengebühren
+  steps:
+  - intent: ask_tuition_fees
+  - action: utter_tuition_fees
+
+- rule: Beispielfrage zu den angebotenen Studiengängen
+  steps:
+  - intent: ask_programs_offered
+  - action: utter_programs_offered
+
+- rule: Standard-Begrüßung
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Standard-Verabschiedung
   steps:
   - intent: goodbye
   - action: utter_goodbye
 
-- rule: Say 'I am a bot' anytime the user challenges
-  steps:
-  - intent: bot_challenge
-  - action: utter_iamabot

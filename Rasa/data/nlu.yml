@@ -1,55 +1,36 @@
-version: "3.1"
+version: "2.0"
 
 nlu:
-- intent: greet 
+- intent: greet
   examples: |
     - Hallo
-    - Servus
-   
+    - Hi
+    - Guten Tag
+    
 - intent: goodbye
   examples: |
-    - Danke
-    - Vielen Dank
-    -Tschüss
+    - Auf Wiedersehen
+    - Tschüss
+    - Bis später
     
-- intent: affirm
+- intent: ask_admission_requirements
   examples: |
-    - Ja
-    - Das stimmt
-    - tatsächlich
-    - das klingt gut
-    - korrekt
+    - Was sind die Zulassungsvoraussetzungen?
+    - Welche Voraussetzungen muss ich erfüllen, um mich zu bewerben?
+    - Gibt es bestimmte Anforderungen für die Zulassung?
+    
+- intent: ask_tuition_fees
+  examples: |
+    - Wie hoch sind die Studiengebühren?
+    - Was kostet das Studium?
+    - Kannst du mir etwas über die Studiengebühren erzählen?
+    
+- intent: ask_programs_offered
+  examples: |
+    - Welche Studiengänge werden angeboten?
+    - Was sind die verfügbaren Programme?
+    - Kannst du mir sagen, welche Studiengänge es gibt?
 
-- intent: deny
-  examples: |
-    - nein
-    - das stimmt nicht
-    - niemals
-    - Ich glaube nicht
-    - nicht wirklich
-    
-- intent: mood_great
-  examples: |
-    - perfekt
-    - es geht mir gut
-    - es geht mir super
-    
-- intent: mood_unhappy
-  examples: |
-    - es geht mir nicht gut
-    - hilfe
-
-- intent: bot_challenge
-  examples: |
-    - bist du ein Bot?
-    - bist du ein Mensch?
-    - rede ich wie ein Bot?
-    - rede ich mit einem Menschen?
-    
-- intent: uni
-  examples: |
-    - welche Module soll ich dieses Semester belegen?
-    - was soll ich belegen?
   
 
 

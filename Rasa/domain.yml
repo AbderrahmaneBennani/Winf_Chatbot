@@ -1,42 +1,25 @@
-version: "3.1"
+version: "2.0"
 
 intents:
   - greet
   - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-  - uni
+  - ask_admission_requirements
+  - ask_tuition_fees
+  - ask_programs_offered
 
 responses:
   utter_greet:
-    - text: "Hallo, wie kann ich dir helfen?"
-    - text: "Servus, eigentlich habe ich Bergfrei aber helfe dir trotzdem"
-
-  utter_cheer_up:
-    - text: "Ich kann dir da leider nicht helfen"
-      
-  utter_did_that_help:
-    - text: "Hat dir das geholfen?"
-    - text: "War das hilfreich?"
-
-  utter_happy:
-    - text: "Sehr gut!"
-    - text: "Ich hoffe alles funktioniert"
-
-  utter_goodbye:
-    - text: "Servus"
-
-  utter_iamabot:
-    - text: "Ich bin ein Bot, erstellt mit Rasa"
-
-  utter_uni:
-    - text: "Im ersten Semester wäre v.a AuD gut"
-    - text: "Mach erstmal die GOP Module fertig"
+    - text: "Hallo! Wie kann ich Ihnen bei Fragen zur Universität helfen?"
     
+  utter_goodbye:
+    - text: "Auf Wiedersehen! Wenn Sie weitere Fragen haben, stehe ich Ihnen gerne zur Verfügung."
 
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  utter_admission_requirements:
+    - text: "Um sich für unser Programm zu bewerben, müssen Sie die folgenden Voraussetzungen erfüllen: ..."
+    
+  utter_tuition_fees:
+    - text: "Die Studiengebühren für unser Programm betragen ... pro Jahr."
+    
+  utter_programs_offered:
+    - text: "Wir bieten eine Vielzahl von Studiengängen an, darunter ..."
+
