@@ -3,23 +3,27 @@ version: "2.0"
 intents:
   - greet
   - goodbye
-  - ask_admission_requirements
-  - ask_tuition_fees
-  - ask_programs_offered
+  - frage_kurs_registrierung
+  - frage_registrierungsfehler
+  - nlu_fallback
 
 responses:
   utter_greet:
-    - text: "Hallo! Wie kann ich Ihnen bei Fragen zur Universität helfen?"
-    
+    - text: Hallo! Wie kann ich Ihnen bei Fragen zur Universität helfen?
+
   utter_goodbye:
-    - text: "Auf Wiedersehen! Wenn Sie weitere Fragen haben, stehe ich Ihnen gerne zur Verfügung."
+    - text: Auf Wiedersehen! Wenn Sie weitere Fragen haben, stehe ich Ihnen gerne zur Verfügung.
 
-  utter_admission_requirements:
-    - text: "Um sich für unser Programm zu bewerben, müssen Sie die folgenden Voraussetzungen erfüllen: ..."
-    
-  utter_tuition_fees:
-    - text: "Die Studiengebühren für unser Programm betragen ... pro Jahr."
-    
-  utter_programs_offered:
-    - text: "Wir bieten eine Vielzahl von Studiengängen an, darunter ..."
+  utter_kurs_registrierung:
+    - text: Du gehst auf https://www.studon.fau.de/ und meldest dich an. Oben rechts in der Suchleiste tippst du das gewünschte Modul ein.
 
+  utter_registrierungsfehler:
+    - text: Es kann sein, dass der Anmeldungszeitraum noch nicht stattgefunden hat oder du ihn verpasst hast.
+
+  utter_please_rephrase:
+    - text: Ich habe Ihnen leider nicht verstanden. können Sie Ihre Frage bitte umformulieren?(1)
+    # (1) um zu wissen, welche fallback getriggert war
+
+  utter_default:
+    - text: Ich habe Ihnen leider nicht verstanden. können Sie Ihre Frage bitte umformulieren?(2)
+    # (2) um zu wissen, welche fallback getriggert war

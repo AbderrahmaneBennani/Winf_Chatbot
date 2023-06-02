@@ -1,36 +1,27 @@
 version: "2.0"
 
 stories:
-- story: Beispielnutzung - Zulassungsvoraussetzungen
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: ask_admission_requirements
-  - action: utter_admission_requirements
-  - intent: goodbye
-  - action: utter_goodbye
+  - story: Beispielnutzung - Kurs Registrierung
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: frage_kurs_registrierung
+      - action: utter_kurs_registrierung
+      - intent: goodbye
+      - action: utter_goodbye
 
-- story: Beispielnutzung - Studiengebühren
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: ask_tuition_fees
-  - action: utter_tuition_fees
-  - intent: goodbye
-  - action: utter_goodbye
+  - story: Beispielnutzung - Kurs Registrierung
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: frage_registrierungsfehler
+      - action: utter_registrierungsfehler
+      - intent: goodbye
+      - action: utter_goodbye
 
-- story: Beispielnutzung - Studiengänge
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: ask_programs_offered
-  - action: utter_programs_offered
-  - intent: goodbye
-  - action: utter_goodbye
-
-- story: Standardunterhaltung
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: goodbye
-  - action: utter_goodbye
+  - story: Standardunterhaltung
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: goodbye
+      - action: utter_goodbye

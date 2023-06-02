@@ -1,28 +1,27 @@
 vversion: "2.0"
 
 rules:
-- rule: Beispielfrage zur Zulassung
-  steps:
-  - intent: ask_admission_requirements
-  - action: utter_admission_requirements
+  - rule: Beispielfrage zur Kurs Registrierung
+    steps:
+      - intent: frage_kurs_registrierung
+      - action: utter_kurs_registrierung
 
-- rule: Beispielfrage zu den Studiengebühren
-  steps:
-  - intent: ask_tuition_fees
-  - action: utter_tuition_fees
+  - rule: Beispielfrage Regiestrierungsfehler
+    steps:
+      - intent: frage_registrierungsfehler
+      - action: utter_registrierungsfehler
 
-- rule: Beispielfrage zu den angebotenen Studiengängen
-  steps:
-  - intent: ask_programs_offered
-  - action: utter_programs_offered
+  - rule: Standard-Begrüßung
+    steps:
+      - intent: greet
+      - action: utter_greet
 
-- rule: Standard-Begrüßung
-  steps:
-  - intent: greet
-  - action: utter_greet
+  - rule: Standard-Verabschiedung
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
 
-- rule: Standard-Verabschiedung
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
-
+  - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+    steps:
+      - intent: nlu_fallback
+      - action: utter_please_rephrase
