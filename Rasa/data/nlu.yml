@@ -6,6 +6,10 @@ nlu:
     - Hallo
     - Hi
     - Guten Tag
+    - Hey
+    - Hello
+    - Servus
+    - Servus!
     
 - intent: goodbye
   examples: |
