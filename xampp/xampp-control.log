@@ -67,3 +67,24 @@
 00:27:44  [main] 	Deinitializing Modules
 00:27:44  [main] 	Deinitializing Control Panel
 
+00:25:10  [main] 	Initializing Control Panel
+00:25:10  [main] 	Windows Version:  Home  64-bit
+00:25:10  [main] 	XAMPP Version: 8.2.4
+00:25:10  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+00:25:10  [main] 	You are not running with administrator rights! This will work for
+00:25:10  [main] 	most application stuff but whenever you do something with services
+00:25:10  [main] 	there will be a security dialogue or things will break! So think 
+00:25:10  [main] 	about running this application with administrator rights!
+00:25:10  [main] 	XAMPP Installation Directory: "c:\users\mstin\onedrive\dokumente\github\winf_chatbot\xampp\"
+00:25:10  [main] 	Checking for prerequisites
+00:25:10  [main] 	All prerequisites found
+00:25:10  [main] 	Initializing Modules
+00:25:10  [main] 	The MySQL module is disabled
+00:25:10  [main] 	The FileZilla module is disabled
+00:25:10  [main] 	The Mercury module is disabled
+00:25:10  [main] 	The Tomcat module is disabled
+00:25:10  [main] 	Starting Check-Timer
+00:25:10  [main] 	Control Panel Ready
+01:03:03  [main] 	Deinitializing Modules
+01:03:03  [main] 	Deinitializing Control Panel
+
