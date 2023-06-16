@@ -1,33 +1,51 @@
 version: "2.0"
 
+#Kurse: (Andre)
+
 nlu:
-  - intent: greet
-    examples: |
-      - Hallo
-      - Hi
-      - Guten Tag
-      - Hey
-      - Hello
-      - Servus
+- intent: greet
+  examples: |
+    - Hallo
+    - Hi
+    - Guten Tag
+    - Servus
+    - Kannst du mir helfen?
+    - Ich brauche deine Hilfe
+    
+- intent: goodbye
+  examples: |
+    - Auf Wiedersehen
+    - Tschüss
+    - Bis später
+    
+    
+- intent: kurs_anmeldung
+  examples: |
+    - Wie kann ich mich für meine Kurse anmelden?
+    - Wie melde ich mich für ein Modul an?
+    - Wie melde ich mich für Veranstaltungen an?
+    - Wie melde ich mich an?
+    
+- intent: kurs_anmeldung_error
+  examples: |
+    - Warum kann ich mich nicht für den Kurs anmelden?
+    - Ich bekomme einen Error, wenn ich mich für einen Kurs auf StudOn anmelden will
+    - Die Kursanmeldung funktioniert nicht
+    - Ich kann mich nicht für einen Kurs anmelden
+    
+- intent: personalisierter_stundenplan
+  examples: |
+    - Wo bekomme ich einen personalisierten Stundenplan?
+    - Wie kann ich einen eigenen Stundenplan erstellen?
+    - Wo finde ich meinen Stundenplan?
+    - Gibt es automatisierte Stundenpläne?
+    - Ich möchte gerne einen Stundenplan erstellen
+    - Ich brauche einen Stundenplan
 
-  - intent: goodbye
-    examples: |
-      - Auf Wiedersehen
-      - Tschüss
-      - Bis später
-      - Goodbye
-      - ciao
-
-  - intent: frage_kurs_registrierung
-    examples: |
-      - Wie kann ich mich für meine Kurse anmelden?
-      - Wie kann ich eine Anmeldung für meine Kurse durchführen?
-      - Wie kann ich mich für eine Kurse registrieren?
-      - Wie melde ich mich für meine Kurse an?
-
-  - intent: frage_registrierungsfehler
-    examples: |
-      - Warum kann ich mich nicht für den Kurs anmelden?
-      - Weshalb ist es mir nicht möglich, mich für den Kurs anzumelden?
-      - Was ist der Grund dafür, dass ich mich nicht für den Kurs anmelden kann?
-      - Warum ist es mir nicht gestattet, mich für den Kurs anzumelden?
+- intent: kurs_anmeldung_welche
+    - Wie kann ich herausfinden, für welche Kurse ich mich anmelden muss?
+    - Für welche Kurse muss ich mich anmelden?
+    - Was muss ich im Studium der Wirtschaftsinformatik belegen?
+    - In welche Kurse muss ich?
+    - In welche Module muss ich?
+    - Weißt du welche Fächer ich machen muss?

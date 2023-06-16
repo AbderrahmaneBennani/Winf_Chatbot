@@ -1,15 +1,32 @@
-vversion: "2.0"
+version: "2.0"
+
+#Kurse: (Andre)
 
 rules:
-  - rule: Beispielfrage zur Kurs Registrierung
+  - rule: Beispielfrage-Kurs-Anmeldung
     steps:
-      - intent: frage_kurs_registrierung
-      - action: utter_kurs_registrierung
+      - intent: kurs_anmeldung
+      - action: utter_kurs_anmeldung
 
-  - rule: Beispielfrage Regiestrierungsfehler
+  - rule: Beispielfrage-Kurs-Anmeldung-Error
     steps:
-      - intent: frage_registrierungsfehler
-      - action: utter_registrierungsfehler
+      - intent: kurs_anmeldung_error
+      - action: utter_kurs_anmeldung_error
+  
+  - rule: Beispielfrage-Kurs-Abmeldung
+    steps:
+      - intent: kurs_abmeldung
+      - action: utter_kurs_abmeldung
+
+  - rule: Beispielfrage-Personalisierter Stundenplan
+    steps:
+      - intent: personalisierter_stundenplan
+      - action: utter_personalisierter_stundenplan
+
+  - rule: Kurs-Anmeldung-Welche
+    steps:
+      - intent: kurs_anmeldung_welche
+      - action: utter_kurs_anmeldung_welche
 
   - rule: Standard-Begrüßung
     steps:
@@ -21,7 +38,4 @@ rules:
       - intent: goodbye
       - action: utter_goodbye
 
-  - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
-    steps:
-      - intent: nlu_fallback
-      - action: utter_please_rephrase
+ 

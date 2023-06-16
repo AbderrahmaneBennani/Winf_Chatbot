@@ -1,0 +1,28 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "action_listen",
+    "eJydjkEKwCAMBL/iA/oCv1JKkDaIVNMSk14kf69g70JvOzAMuzZbXLsZHwi7pIu8a2MAhYLefZBTFaTuakXuTqKO4l1kRLFJQ0WQYaj/CpMXp3KFQAXzoRTNtheDAVIz": "utter_kurs_anmeldung",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAV2aVFxfGJebmpOSmleenEOQdND0EzYwHTxXLV": "action_listen",
+    "eJylkFEKgCAQRK/iATqBV4kQqyGkWmNdgxDvnlBf/Rj1twNvHsO2KTcqbYzd2EGcJ63SdRiyK7S6w+KCgAobA7gwjkoUrSYGJFccUQRsLvSbobJijhyMpRXLGGl6N+fR+emsvcn7sT+Qc3cC4zCNew==": "utter_goodbye",
+    "eJylkFEKgCAQRK/iATqBV4kQqyGkWmNdg5DunlBfQRj1twNvH8PUaa9UWhirsZ04T1ql8zBkZ2h1hckFAWU2BnBmHOUoWg0MyF5wRBGwOdFvhkKLMXIwlmZMfaThXZ3bz09naSbv+3bDy6Eu+NnSHD+XqDE=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMgV+fkpSZWptbWxAExvTz0=": "action_listen",
+    "eJydjlEKgCAQBa/iATqBV4lYpB4i2Rrr2o949wT7F/p7A8Pw1toWU2/BQ27XkNiaOgaxu2DNBzFkBXe3ZEh3AndUa7wA2iaNogqhof4rTF6cRTI5vhCPwp4gkqS17QV4g1S8": "utter_kurs_anmeldung_error",
+    "eJydjlEKgCAQRK/iATqBV4lYpIaQdIt17Ue6e0J9Bkp/M/DmMWO5BlMOwUluVr+zNeUJxC7CmrcEnxRc2ZwglfFcq1qzCqBXw5FVIfSg/wyNF1uWRI4jwpJ5JYjs0nfqc9npn25G1npw": "action_listen",
+    "eJytkFEKwyAQRK/iAXICrxLCYpNBpMka1rVQxLtXsJ8BS8nfDrx5DDuXOplyCl7kVg2RrSn9IHYHrPmGPSQFNzYnSGMCt6jWeAG0DhxZFUId/c8wWPHMksjxgX3L7AkiUX4bddm8xT96XIzb441alw9qwZUW": "utter_goodbye",
+    "eJytkFEKhDAMRK/SA3iCXkUkVB2kqKmkqbAU725BP3epLP5l4OUxTJuPxuRNsJMb1Ae2Jl8HsVthzR0WHxVc2BQhhfFcolozCaBHxZFUIXSh/xkqLeYkkRyvWMbEE0EkyLNSXz9f8deGC2HsP3g43Q3/tnQn25mvzA==": "action_listen",
+    "eJydjkEKgDAMBL+SB/iCfkUkVA2l2EZJEy+lf7dQ74K3HRiGnWuboF5CN/pN48kO6hjIPpODF1IsStxdKyTdidxRHQQh0vbRMFUSHOq/wseLw6SgXzOl3Ti0tjyCfVIn": "utter_kurs_abmeldung",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAV2aVFxfGJSbmpOSmleenEOQdND0EzYwHMyXKx": "action_listen",
+    "eJylkFEKgCAQRK/iATqBV4kQqyGkWmNdgxDvnlBf/Rj1twNvHsO2KTcqbYzd2EGcJ63SdRiyK7S6w+KCgAobA7gwjkoUrSYGJFccUQRsLvSbobJijhyM7VcsY6Tp3ZxH56ez9ibvx/5Azt0J0lyNVw==": "utter_goodbye",
+    "eJylkFEKgCAQRK/iATqBV4kQqyGkWmNdg5DunlBfQRj1twNvH8PUaa9UWhirsZ04T1ql8zBkZ2h1hckFAWU2BnBmHOUoWg0MyF5wRBGwOdFvhkKLMXIwtp0x9ZGGd3VuPz+dpZm879sNL4e64GdLcwAk66gN": "action_listen",
+    "eJydjtEJwCAQQ1dxgE7gKqWItKEI9pTz7I/c7rXYf6F/CXkkWZsupmXG7fwuIZE1bQhH/oI1n4mhCKiztYA7E6hbseZkQHTSUUXAbqD/GiYvMrgk8j0O4HerSKUDlKMn1e0BLu1YKg==": "utter_personalisierter_stundenplan",
+    "eJydjl0KgCAQhK/iATqBV4kQqSEEW2VdexHvnmHP/b3tsB/fzFjqoEpk7MbO4gJpVfphyG7Q6greJQE1NidwYxy1KFqtDEh9cGQRsOnoP8PDighOgWx7O/DZlSTTAore0rtxt4aPfdMBbd2Eug==": "action_listen",
+    "eJytkGEKhSAQhK/iATqBV4kQy+Eh1CrrGoR49+ejfucj+rfDDt8MM5Y6qBIZu7GL+EBalfMwZDdodYnVJwE1b07g5vHUpGj1YUBqh5FFwOa0PiN0WkRwCmTb24N/WUkyOVBcLf1X7pbwal5v0BDcfKDW6QtiMZ9g": "utter_goodbye",
+    "eJytkFEKhiAQhK/iATqBV4kQqyGEWmVdg5Du/hv1WsZPbzvsx8wwbd4blQNjNXYQ50mrfB6G7AKtLjG7KKDCpggujKMiRauJAdkrHkkEbE70P4dKiwCOnmx5O/CRFSXRCAqzpXflHh0+zasN6v3Yb3g56QXfu3Q/o3K6Fg==": "action_listen",
+    "eJydjlEKgCAQBa/iATqBV4lYpB4l2RbrWh/i3RPsX+jvDQzDG3MZTL4EN7lZ/cnW5DaI3QFrPgg+Kri6KUKq47miWrMKoKXTSKoQauq/QufFniSS4wNhSbzSgzBvKGV6Ac0SVQo=": "utter_kurs_anmeldung_welche",
+    "eJydjssJgDAQRFtJAVaQVkSWEAcNxlU2Gz0EezegR0HxNgNvPm05GlNWwUbOa1jYmnIJYjfDmtvEkBRc2ZwglQlcrVozCKDHS0dWhdCF/mt4eTFlSeR4RuwzD7Qj+hHfXj1Hvy50J6sHe1o=": "action_listen",
+    "eJytkGEKgzAMha/SA+wEvYqMUPXhymo60nQyindfQX8KFfFfHnz58khX1ocpH8GX3KA+sjVlG4jdDGv2EHxScGVzglTGc41qzSSArg1HVoXQhl4zNFq8syRyPCOMmSdaEIYXzrU6Xr3nQut3MY79r1qefw79lgA=": "utter_goodbye",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAV2aVFxfGJebmpOSmleenx5ak5yRmpxLkKu1bq2EAo7PLzU5IqiXQnTDFuU2IBv9Gwtg==": "action_listen"
+  }
+}
