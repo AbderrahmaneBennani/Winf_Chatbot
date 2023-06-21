@@ -31,3 +31,25 @@ nlu:
       - Weshalb ist es mir nicht möglich, mich für den Kurs anzumelden?
       - Was ist der Grund dafür, dass ich mich nicht für den Kurs anmelden kann?
       - Warum ist es mir nicht gestattet, mich für den Kurs anzumelden?
+
+  - intent: frage_immatrikulation
+    examples: |
+      -Wie immatrikuliert man sich?
+      -Wie kann ich für Wirtschaftsinformatik immatrikulieren?
+      -Wie kann ich mich einschreiben?
+
+  - intent: frage_zulassungsfrei
+    examples: |
+      - Von wann bis wann kann ich mich für ein zulassungsfreien Studiengang bei der FAU bewerben?
+
+  - intent: frage_NC
+    examples: |
+      - Von wann bis wann kann ich mich für ein Studiengang ohne NC bei der FAU bewerben?
+
+  - intent: frage_Unterlagen
+    examples: |
+      - Welche Dokumente muss ich einreichen?
+
+  - intent: frage_FAUCard
+    examples: |
+      - Woher bekomme ich meine FAU-Card nach der Immatrikulation?
