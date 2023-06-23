@@ -41,15 +41,36 @@ nlu:
   - intent: frage_zulassungsfrei
     examples: |
       - Von wann bis wann kann ich mich für ein zulassungsfreien Studiengang bei der FAU bewerben?
+      - Bis zu welchem Zeitpunkt kann ich meine Bewerbung für einen zulassungsfreien Studiengang an der FAU einreichen?
+      - Welcher ist der Bewerbungsschluss für einen zulassungsfreien Studiengang an der FAU?
+      - Bis zu welchem Datum kann ich mich für einen Studiengang ohne Zulassungsbeschränkungen an der FAU bewerben?
+      - Welches ist das Ende der Bewerbungsfrist für einen zulassungsfreien Studiengang an der FAU?
+      - Ab wann und bis wann besteht die Möglichkeit, sich für einen Studiengang ohne Zulassungsbeschränkungen an der FAU zu bewerben?
 
   - intent: frage_NC
     examples: |
-      - Von wann bis wann kann ich mich für ein Studiengang ohne NC bei der FAU bewerben?
+      - Bis zu welchem Zeitpunkt kann ich meine Bewerbung für einen Studiengang mit Numerus Clausus an der FAU einreichen?
+      - Welcher ist der Bewerbungsschluss für einen NC-beschränkten Studiengang an der FAU?
+      - Bis zu welchem Datum kann ich mich für einen Studiengang mit Zulassungsbeschränkungen an der FAU bewerben?
+      - Welches ist das Ende der Bewerbungsfrist für einen Studiengang mit NC an der FAU?
+      - Ab wann und bis wann besteht die Möglichkeit, sich für einen Studiengang mit Zulassungsbeschränkungen an der FAU zu bewerben?
 
   - intent: frage_Unterlagen
     examples: |
-      - Welche Dokumente muss ich einreichen?
+      - Welche Unterlagen sind erforderlich, um mich zu Immatrikulieren?
+      - Welche Dokumente sind notwendig, um mich einzuschreiben?
+      - Welche Unterlagen werden für meine Einschreibung benötigt?
+      - Welche Dokumente muss ich vorlegen, um mich einschreiben zu können?
+      - Welche Unterlagen sind erforderlich, um den Einschreibeprozess abzuschließen?
+      - Welche Dokumentation ist notwendig, um meine Einschreibung durchzuführen?
+      - Welche Unterlagen werden von mir verlangt, um mich erfolgreich einzuschreiben?
+
 
   - intent: frage_FAUCard
     examples: |
       - Woher bekomme ich meine FAU-Card nach der Immatrikulation?
+      - Nach der Immatrikulation, wo kann ich meine FAU-Card erhalten?
+      - Wo kann ich meine FAU-Card nach der Immatrikulation erhalten?
+      - An welchem Ort kann ich meine FAU-Card nach der Immatrikulation abholen?
+      - Nach der Immatrikulation, wo erhalte ich meine FAU-Card?
+      - Wo ist der Ausgabepunkt für die FAU-Card nach der Immatrikulation?
