@@ -50,8 +50,7 @@ responses:
     - text: Entweder du lässt ihn automatisch über Campo erstellen, oder du machst es über "slot.cs.fau.de"
 
   utter_default:
-    - text: Ich habe Ihnen leider nicht verstanden. können Sie Ihre Frage bitte umformulieren?(2)
-    # (2) um zu wissen, welche fallback getriggert wurde
+    - text: Ich habe Ihnen leider nicht verstanden. können Sie Ihre Frage bitte umformulieren?
 
   utter_immatrikulation:
     - text: Nach erfolgreicher Registrierung bzw. Bewerbung in campo.fau.de bzw. im bundesweiten Auswahlverfahren von hochschulstart.de und der Überweisung des Semesterbeitrags können Sie sich mit allen erforderlichen Unterlagen während der vorgesehenen Fristen einschreiben.

@@ -1,0 +1,42 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_goodbye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"kurs_anmeldung_welche\"}}]": "utter_kurs_anmeldung_welche",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"kurs_anmeldung_welche\"}}, {\"prev_action\": {\"action_name\": \"utter_kurs_anmeldung_welche\"}, \"user\": {\"intent\": \"kurs_anmeldung_welche\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}]": "utter_greet",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet\"}, \"user\": {\"intent\": \"greet\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"frage_immatrikulation\"}}]": "utter_immatrikulation",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"frage_immatrikulation\"}}, {\"prev_action\": {\"action_name\": \"utter_immatrikulation\"}, \"user\": {\"intent\": \"frage_immatrikulation\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"kurs_anmeldung\"}}]": "utter_kurs_anmeldung",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"kurs_anmeldung\"}}, {\"prev_action\": {\"action_name\": \"utter_kurs_anmeldung\"}, \"user\": {\"intent\": \"kurs_anmeldung\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]": "utter_default",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}, {\"prev_action\": {\"action_name\": \"utter_default\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"frage_NC\"}}]": "utter_NC",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"frage_NC\"}}, {\"prev_action\": {\"action_name\": \"utter_NC\"}, \"user\": {\"intent\": \"frage_NC\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"frage_Unterlagen\"}}]": "utter_Unterlagen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"frage_Unterlagen\"}}, {\"prev_action\": {\"action_name\": \"utter_Unterlagen\"}, \"user\": {\"intent\": \"frage_Unterlagen\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"kurs_abmeldung\"}}]": "utter_kurs_abmeldung",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"kurs_abmeldung\"}}, {\"prev_action\": {\"action_name\": \"utter_kurs_abmeldung\"}, \"user\": {\"intent\": \"kurs_abmeldung\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"kurs_anmeldung_error\"}}]": "utter_kurs_anmeldung_error",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"kurs_anmeldung_error\"}}, {\"prev_action\": {\"action_name\": \"utter_kurs_anmeldung_error\"}, \"user\": {\"intent\": \"kurs_anmeldung_error\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"personalisierter_stundenplan\"}}]": "utter_personalisierter_stundenplan",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"personalisierter_stundenplan\"}}, {\"prev_action\": {\"action_name\": \"utter_personalisierter_stundenplan\"}, \"user\": {\"intent\": \"personalisierter_stundenplan\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"frage_zulassungsfrei\"}}]": "utter_zulassungsfrei",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"frage_zulassungsfrei\"}}, {\"prev_action\": {\"action_name\": \"utter_zulassungsfrei\"}, \"user\": {\"intent\": \"frage_zulassungsfrei\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"frage_FAUCard\"}}]": "utter_FAUCard",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"frage_FAUCard\"}}, {\"prev_action\": {\"action_name\": \"utter_FAUCard\"}, \"user\": {\"intent\": \"frage_FAUCard\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}, {\"prev_action\": {\"action_name\": \"utter_default\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]",
+      "predicting default action with intent back",
+      "predicting default action with intent session_start"
+    ]
+  }
+}

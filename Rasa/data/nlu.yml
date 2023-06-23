@@ -1,45 +1,14 @@
 version: "2.0"
 
-
 nlu:
-- intent: greet
-  examples: |
-    - Hallo
-    - Hi
-    - Guten Tag
-    - Servus
-    - Kannst du mir helfen?
-    - Ich brauche deine Hilfe
-    
-- intent: goodbye
-  examples: |
-    - Auf Wiedersehen
-    - Tschüss
-    - Bis später
-    
-    
-- intent: kurs_anmeldung
-  examples: |
-    - Wie kann ich mich für meine Kurse anmelden?
-    - Wie melde ich mich für ein Modul an?
-    - Wie melde ich mich für Veranstaltungen an?
-    - Wie melde ich mich an?
-    
-- intent: kurs_anmeldung_error
-  examples: |
-    - Warum kann ich mich nicht für den Kurs anmelden?
-    - Ich bekomme einen Error, wenn ich mich für einen Kurs auf StudOn anmelden will
-    - Die Kursanmeldung funktioniert nicht
-    - Ich kann mich nicht für einen Kurs anmelden
-    
-- intent: personalisierter_stundenplan
-  examples: |
-    - Wo bekomme ich einen personalisierten Stundenplan?
-    - Wie kann ich einen eigenen Stundenplan erstellen?
-    - Wo finde ich meinen Stundenplan?
-    - Gibt es automatisierte Stundenpläne?
-    - Ich möchte gerne einen Stundenplan erstellen
-    - Ich brauche einen Stundenplan
+  - intent: greet
+    examples: |
+      - Hallo
+      - Hi
+      - Guten Tag
+      - Servus
+      - Kannst du mir helfen?
+      - Ich brauche deine Hilfe
 
   - intent: goodbye
     examples: |
@@ -48,6 +17,29 @@ nlu:
       - Bis später
       - Goodbye
       - ciao
+
+  - intent: kurs_anmeldung
+    examples: |
+      - Wie kann ich mich für meine Kurse anmelden?
+      - Wie melde ich mich für ein Modul an?
+      - Wie melde ich mich für Veranstaltungen an?
+      - Wie melde ich mich an?
+
+  - intent: kurs_anmeldung_error
+    examples: |
+      - Warum kann ich mich nicht für den Kurs anmelden?
+      - Ich bekomme einen Error, wenn ich mich für einen Kurs auf StudOn anmelden will
+      - Die Kursanmeldung funktioniert nicht
+      - Ich kann mich nicht für einen Kurs anmelden
+
+  - intent: personalisierter_stundenplan
+    examples: |
+      - Wo bekomme ich einen personalisierten Stundenplan?
+      - Wie kann ich einen eigenen Stundenplan erstellen?
+      - Wo finde ich meinen Stundenplan?
+      - Gibt es automatisierte Stundenpläne?
+      - Ich möchte gerne einen Stundenplan erstellen
+      - Ich brauche einen Stundenplan
 
   - intent: frage_kurs_registrierung
     examples: |
@@ -65,9 +57,9 @@ nlu:
 
   - intent: frage_immatrikulation
     examples: |
-      -Wie immatrikuliert man sich?
-      -Wie kann ich für Wirtschaftsinformatik immatrikulieren?
-      -Wie kann ich mich einschreiben?
+      - Wie immatrikuliert man sich?
+      - Wie kann ich für Wirtschaftsinformatik immatrikulieren?
+      - Wie kann ich mich einschreiben?
 
   - intent: frage_zulassungsfrei
     examples: |
@@ -105,10 +97,11 @@ nlu:
       - Nach der Immatrikulation, wo erhalte ich meine FAU-Card?
       - Wo ist der Ausgabepunkt für die FAU-Card nach der Immatrikulation?
 
-- intent: kurs_anmeldung_welche
-    - Wie kann ich herausfinden, für welche Kurse ich mich anmelden muss?
-    - Für welche Kurse muss ich mich anmelden?
-    - Was muss ich im Studium der Wirtschaftsinformatik belegen?
-    - In welche Kurse muss ich?
-    - In welche Module muss ich?
-    - Weißt du welche Fächer ich machen muss?
+  - intent: kurs_anmeldung_welche
+    examples: |
+      - Wie kann ich herausfinden, für welche Kurse ich mich anmelden muss?
+      - Für welche Kurse muss ich mich anmelden?
+      - Was muss ich im Studium der Wirtschaftsinformatik belegen?
+      - In welche Kurse muss ich?
+      - In welche Module muss ich?
+      - Weißt du welche Fächer ich machen muss?
