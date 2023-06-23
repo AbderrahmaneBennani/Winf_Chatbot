@@ -1,6 +1,5 @@
 version: "2.0"
 
-#Kurse: (Andre)
 
 rules:
   - rule: Beispielfrage-Kurs-Anmeldung
