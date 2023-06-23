@@ -48,7 +48,7 @@ policies:
     constrain_similarities: true
   - name: RulePolicy
     core_fallback_threshold: 0.4
-    core_fallback_action_name: "action_default_fallback"
+    core_fallback_action_name: utter_default
     enable_fallback_prediction: True
   # Confidence threshold for the `core_fallback_action_name` to apply.
   # The action will apply if no other action was predicted with

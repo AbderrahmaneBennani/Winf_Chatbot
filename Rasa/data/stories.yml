@@ -31,6 +31,50 @@ stories:
       - intent: goodbye
       - action: utter_goodbye
 
+  - story: Frage zur Immatrikulation
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: frage_immatrikulation
+      - action: utter_immatrikulation
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: Frage zu den zulassungsfreien Studiengänge
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: frage_zulassungsfrei
+      - action: utter_zulassungsfrei
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: Frage zu den NC-Studiengänge
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: frage_NC
+      - action: utter_NC
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: Frage zu Immatrikulationsunterlagen
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: frage_Unterlagen
+      - action: utter_Unterlagen
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: Frage zu den FAUCard
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: frage_FAUCard
+      - action: utter_FAUCard
+      - intent: goodbye
+      - action: utter_goodbye
 
   - story: Personalisierter-Stundenplan
     steps:
