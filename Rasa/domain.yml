@@ -1,5 +1,7 @@
 version: "2.0"
 
+#Kurse: (Andre)
+
 intents:
   - greet
   - goodbye
@@ -11,27 +13,46 @@ intents:
   - frage_NC
   - frage_Unterlagen
   - frage_FAUCard
+  - kurs_anmeldung
+  - kurs_anmeldung_error
+  - kurs_abmeldung
+  - personalisierter_stundenplan
+  - kurs_anmeldung_welche
 
 responses:
   utter_greet:
     - text: Hallo! Wie kann ich Ihnen bei Fragen zur Universität helfen?
+    - text: Es ist wohl nicht Bergfrei, also kann ich dir helfen... was brauchst du?
+    - text: Brauchst du Hilfe?
+    - text: Wie kann ich dir helfen?
 
   utter_goodbye:
     - text: Auf Wiedersehen! Wenn Sie weitere Fragen haben, stehe ich Ihnen gerne zur Verfügung.
+    - text: Tschüss
+    - text: Brauchst du noch Hilfe?
+    - text: Ich hoffe ich konnte dir helfen!
 
-  utter_kurs_registrierung:
+  utter_kurs_anmeldung:
     - text: Du gehst auf https://www.studon.fau.de/ und meldest dich an. Oben rechts in der Suchleiste tippst du das gewünschte Modul ein.
+    - text: Du kannst dich auf StudOn anmelden oder auf der Website des Lehrstuhls schauen
 
-  utter_registrierungsfehler:
+  utter_kurs_anmeldung_error:
     - text: Es kann sein, dass der Anmeldungszeitraum noch nicht stattgefunden hat oder du ihn verpasst hast.
+    - text: Du hast entweder die Anmeldefrist verpasst oder der Kurs findet dieses Semester nicht statt. 
+    - text: Schau am besten nochmal nach, ob der Kurs wirklich stattfindet
+  
+  utter_kurs_abmeldung:
+    - text: Es kann sein, dass der Anmeldungszeitraum noch nicht stattgefunden hat oder du ihn verpasst hast.
+    - text: Du hast entweder die Anmeldefrist verpasst oder der Kurs findet dieses Semester nicht statt. 
+    - text: Schau am besten nochmal nach, ob der Kurs wirklich stattfindet
 
-  utter_please_rephrase:
-    - text: Ich habe Ihnen leider nicht verstanden. können Sie Ihre Frage bitte umformulieren?(1)
-    # (1) um zu wissen, welche fallback getriggert war
+  utter_personalisierter_stundenplan:
+    - text: Anhand deiner Kurse wird ein automatischer Stundenplan erstellt auf https://www.campo.fau.de/. Oben links gehst du auf das Menü -> Mein Studium -> Stundenplan. Wenn du deinen eigenen manuellen Stundenplan erstellen möchtest, dann kannst du dies auf slot.cs.fau.de machen.
+    - text: Entweder du lässt ihn automatisch über Campo erstellen, oder du machst es über "slot.cs.fau.de"
 
   utter_default:
     - text: Ich habe Ihnen leider nicht verstanden. können Sie Ihre Frage bitte umformulieren?(2)
-    # (2) um zu wissen, welche fallback getriggert war
+    # (2) um zu wissen, welche fallback getriggert wurde
 
   utter_immatrikulation:
     - text: Nach erfolgreicher Registrierung bzw. Bewerbung in campo.fau.de bzw. im bundesweiten Auswahlverfahren von hochschulstart.de und der Überweisung des Semesterbeitrags können Sie sich mit allen erforderlichen Unterlagen während der vorgesehenen Fristen einschreiben.
@@ -47,3 +68,7 @@ responses:
 
   utter_FAUCard:
     - text: Den Studierendenausweis (FAUcard) erhalten Sie frühestens drei Wochen nach der Aktivierung Ihres Benutzerkontos vom FAUcard-Servicebüro per Post. Der Studierendenausweis kann erst erstellt werden, wenn Sie bei der oben genannten Aktivierung auch ein Passbild hochgeladen haben.
+  
+  utter_kurs_anmeldung_welche:
+    - text: Um herauszufinden, für welche Kurse Sie sich anmelden müssen, empfehle ich Ihnen, nach einem Modulplan für Ihren Studiengang in einer beliebigen Suchmaschine zu suchen. Beachten Sie dabei, dass der Studienplan je nach dem Jahr, in dem Sie Ihr Studium begonnen haben, variieren kann.
+    - text: Du kannst dir entweder auf Campo die zu belegenden Fächer anschauen, oder du suchst auf der Seite der Wiso nach dem Studienverlaufsplan für den Bachelor Wirtschaftsinformatik. Achte dabei aber auf das richtige Startsemester.

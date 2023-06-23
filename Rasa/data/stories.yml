@@ -1,28 +1,33 @@
 version: "2.0"
 
+#Kurse: (Andre)
+
 stories:
-  - story: Beispielnutzung - Kurs Registrierung
+  - story: Beispielnutzung-Kurs-Anmeldung
     steps:
       - intent: greet
       - action: utter_greet
-      - intent: frage_kurs_registrierung
-      - action: utter_kurs_registrierung
+      - intent: kurs_anmeldung
+      - action: utter_kurs_anmeldung
       - intent: goodbye
       - action: utter_goodbye
 
-  - story: Beispielnutzung - Kurs Registrierung
+  - story: Beispielnutzung-Kurs-Anmeldung-Error
     steps:
       - intent: greet
       - action: utter_greet
-      - intent: frage_registrierungsfehler
-      - action: utter_registrierungsfehler
+      - intent: kurs_anmeldung_error
+      - action: utter_kurs_anmeldung_error
       - intent: goodbye
       - action: utter_goodbye
 
-  - story: Standardunterhaltung
+
+  - story: Beispielnutzung-Kurs-Abmeldung
     steps:
       - intent: greet
       - action: utter_greet
+      - intent: kurs_abmeldung
+      - action: utter_kurs_abmeldung
       - intent: goodbye
       - action: utter_goodbye
 
@@ -70,3 +75,24 @@ stories:
       - action: utter_FAUCard
       - intent: goodbye
       - action: utter_goodbye
+
+  - story: Personalisierter-Stundenplan
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: personalisierter_stundenplan
+      - action: utter_personalisierter_stundenplan
+      - intent: goodbye
+      - action: utter_goodbye
+
+
+  - story: Beispielnutzung-Kurs-Anmeldung-Welche
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kurs_anmeldung_welche
+      - action: utter_kurs_anmeldung_welche
+      - intent: goodbye
+      - action: utter_goodbye
+
+  
