@@ -1,4 +1,4 @@
-FROM python:3.7.7-stretch AS BASE
+FROM python:3.9.0 AS BASE
 
 RUN apt-get update \
     && apt-get --assume-yes --no-install-recommends install \
@@ -14,7 +14,7 @@ WORKDIR /app
 # upgrade pip version
 RUN pip install --no-cache-dir --upgrade pip
 
-RUN pip install rasa==2.0.0
+RUN pip install rasa==3.5.10
 
 ADD config.yml config.yml
 ADD domain.yml domain.yml
