@@ -1,22 +1,18 @@
-FROM python:3.9.0 AS BASE
+# Use the base Rasa image
+FROM rasa/rasa:3.5.10
 
-RUN apt-get update \
-    && apt-get --assume-yes --no-install-recommends install \
-    build-essential \
-    curl \
-    git \
-    jq \
-    libgomp1 \
-    vim
-
+# Set the working directory
 WORKDIR /app
 
-# upgrade pip version
-RUN pip install --no-cache-dir --upgrade pip
+# Copy the Rasa project files
+COPY . /app
 
-RUN pip install rasa==3.5.10
+# Set the Rasa environment variables
+ENV PYTHONPATH=/app:$PYTHONPATH
+ENV RASA_TELEMETRY_ENABLED=false
 
-ADD config.yml config.yml
-ADD domain.yml domain.yml
-ADD credentials.yml credentials.yml
-ADD endpoints.yml endpoints.yml
+# Expose the Rasa server port (adjust as needed)
+EXPOSE 5005
+
+# Set the entrypoint command
+ENTRYPOINT ["rasa", "run", "-m", "models", "--enable-api", "--cors", "*", "--debug"]
