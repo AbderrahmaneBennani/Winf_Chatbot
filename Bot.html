@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=3.75" />
+    <title>FAU Bot</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      .header {
+        background-color: #fff;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        color: #041e42;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo img {
+        width: 120px;
+        height: 40px;
+      }
+
+      .buttons {
+        display: flex;
+      }
+
+      .button {
+        background-color: #fff;
+        color: #041e42;
+        padding: 8px 16px;
+        margin-left: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+        text-decoration: none; /* Textunterstreichung entfernen */
+        font-family: "Helvetica Neue", Arial, sans-serif; /* Schriftart beibehalten */
+      }
+
+      .button:hover {
+        background-color: #ddd;
+        text-decoration: none; /* Textunterstreichung entfernen */
+      }
+
+      .button:active {
+        background-color: #999;
+        text-decoration: none; /* Textunterstreichung entfernen */
+      }
+
+      .content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #userInput {
+        width: 100%;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        outline: none;
+        box-shadow: 0 0 0 1px #ddd;
+        margin-left: 10px;
+      }
+
+      #response {
+        width: 100%;
+        height: 200px;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        outline: none;
+        box-shadow: 0 0 0 1px #ddd;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        overflow-y: scroll;
+      }
+
+      .footer {
+        background-color: #041e42;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" />
+      </div>
+      <div class="buttons">
+        <a href="index.html" class="button">Anleitung</a>
+        <a href="umfrage.html" class="button">Umfrage</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <textarea id="response"></textarea>
+      <input type="text" id="userInput" placeholder="Eingabe..." />
+    </div>
+
+    <div class="footer">FAU Wirtschaftsinformatik Chatbot 1.0</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      const responseElement = document.getElementById("response");
+      const userInputElement = document.getElementById("userInput");
+
+      userInputElement.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          const userInput = userInputElement.value;
+          userInputElement.value = "";
+
+          axios
+            .post(
+              "https://chatbot-abderrahmanebennani.koyeb.app/webhooks/rest/webhook",
+              {
+                message: userInput,
+              }
+            )
+            .then((response) => {
+              const botResponse = response.data[0].text;
+              responseElement.value += "Du: " + userInput + "\n";
+              responseElement.value += "Bot: " + botResponse + "\n" + "\n";
+              responseElement.scrollTop = responseElement.scrollHeight;
+              console.log("Bot:", botResponse);
+            })
+            .catch((error) => console.error(error));
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bot Anleitung</title>
+    <style>
+      html {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+      }
+
+      .header {
+        background-color: #fff;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        color: #041e42;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo img {
+        width: 120px;
+        height: 40px;
+      }
+
+      .buttons {
+        display: flex;
+      }
+
+      .button {
+        background-color: #fff;
+        color: #041e42;
+        padding: 8px 16px;
+        margin-left: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+      }
+
+      .button:hover {
+        background-color: #ddd;
+      }
+
+      .button:active {
+        background-color: #999;
+      }
+
+      .content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Arial", sans-serif;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+      .footer {
+        background-color: #041e42;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        font-family: "Arial", sans-serif;
+        margin-top: auto;
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .robot-button {
+        background-color: #fdfffe;
+        border: none;
+        border-radius: 50%;
+        padding: 40px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 250px;
+      }
+
+      .robot-button img {
+        max-width: 80%;
+        max-height: 80%;
+      }
+
+      .robot-button:hover {
+        background-color: #eee;
+      }
+
+      .survey-text {
+        padding-left: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" />
+      </div>
+      <div class="buttons">
+        <a href="bot.html" class="button">Zum Bot</a>
+        <!-- Button als <a>-Element -->
+        <a href="umfrage.html" class="button">Zur Umfrage</a>
+        <!-- Button als <a>-Element -->
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>Anleitung:</h2>
+      <p class="survey-text">
+        Wir wuerden gerne eine Umfrage durchfuehren, bei der potenzielle Nutzer
+        die Usability unseres Wirtschaftsinformatik Chatbots bewerten koennen.
+        Alle Daten werden selbstverstaendlich anonymisiert gespeichert.
+      </p>
+      <p class="survey-text">
+        Um an der Umfrage teilzunehmen, druecke bitte auf den Roboter:
+      </p>
+      <div class="button-container">
+        <a href="umfrage.html" class="robot-button">
+          <img src="surveyImage.jpg" alt="Roboter" />
+        </a>
+      </div>
+    </div>
+
+    <div class="footer">FAU Wirtschaftsinformatik Chatbot 1.0</div>
+  </body>
+</html>

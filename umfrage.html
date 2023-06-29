@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bot Umfrage</title>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      .header {
+        background-color: #fff;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        color: #041e42;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo img {
+        width: 120px;
+        height: 40px;
+      }
+
+      .footer {
+        background-color: #041e42;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        font-family: "Arial", sans-serif;
+        margin-top: auto;
+      }
+
+      .button {
+        background-color: #fff;
+        color: #041e42;
+        padding: 8px 16px;
+        margin-left: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+        text-decoration: none;
+        font-family: "Arial", sans-serif;
+      }
+
+      .button:hover {
+        background-color: #ddd;
+      }
+
+      .button:active {
+        background-color: #999;
+      }
+
+      .questions {
+        margin: 20px;
+        font-family: "Arial", sans-serif;
+      }
+
+      .question {
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 15px;
+        border-radius: 10px;
+        background: #ddd;
+        outline: none;
+      }
+
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #041e42;
+        cursor: pointer;
+      }
+
+      .slider::-moz-range-thumb {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #041e42;
+        cursor: pointer;
+      }
+
+      .slider-labels {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        color: #777;
+        margin-top: 5px;
+      }
+
+      .slider-labels span {
+        flex: 1;
+        text-align: center;
+      }
+
+      .submit-button {
+        margin-top: 20px;
+        text-align: left;
+      }
+
+      .submit-button button {
+        background-color: #04124c;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" />
+      </div>
+      <div class="buttons">
+        <a href="index.html" class="button">Zum Bot</a>
+        <a href="Anleitung.html" class="button">Zur Anleitung</a>
+      </div>
+    </div>
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSdUM1TbxUtCJ56z8mAuuxxjhN_frApVEcghNcC09d5N86NT5w/viewform?embedded=true"
+      width="auto"
+      height="5000"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
+      >Loading…</iframe
+    >
+  </body>
+</html>
