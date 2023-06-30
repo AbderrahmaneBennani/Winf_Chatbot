@@ -44,8 +44,6 @@
       }
 
       .button {
-        background-color: #fff;
-        color: #041e42;
         padding: 8px 16px;
         margin-left: 10px;
         border: none;
@@ -56,6 +54,16 @@
         transition: background-color 0.3s;
         text-decoration: none;
         font-family: Arial, sans-serif;
+      }
+
+      .button-left {
+        background-color: #fff;
+        color: #041e42;
+      }
+
+      .button-right {
+        background-color: #fff;
+        color: #041e42;
       }
 
       .button:hover {
@@ -95,33 +103,21 @@
         margin-top: 20px;
       }
 
-      .robot-button {
-        background-color: #fdfffe;
-        border: none;
-        border-radius: 50%;
-        padding: 40px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 250px;
-        height: 250px;
-      }
-
-      .robot-button img {
-        max-width: 80%;
-        max-height: 80%;
-      }
-
-      .robot-button:hover {
-        background-color: #eee;
-      }
-
       .survey-text {
         padding-left: 20px;
         text-align: center;
+      }
+
+      .button-website {
+        background-color: red;
+        color: #fff;
+        padding: 12px 24px;
+      }
+
+      .button-survey {
+        background-color: lightblue;
+        color: #041e42;
+        padding: 12px 24px;
       }
     </style>
   </head>
@@ -131,27 +127,30 @@
         <img src="logo.png" alt="Logo" />
       </div>
       <div class="buttons">
-        <a href="bot.html" class="button">Zum Bot</a>
-        <!-- Button als <a>-Element -->
-        <a href="umfrage.html" class="button">Zur Umfrage</a>
-        <!-- Button als <a>-Element -->
+        <a href="Bot.html" class="button button-left">Zum Bot</a>
+        <a href="umfrage.html" class="button button-right">Zur Umfrage</a>
       </div>
     </div>
 
     <div class="content">
       <h2>Anleitung:</h2>
       <p class="survey-text">
-        Wir wuerden gerne eine Umfrage durchfuehren, bei der potenzielle Nutzer
-        die Usability unseres Wirtschaftsinformatik Chatbots bewerten koennen.
-        Alle Daten werden selbstverstaendlich anonymisiert gespeichert.
+        Wir haben einen Chatbot implementiert, mit dem wir Wirtschaftsinformatik
+        Studenten im Bachelorstudium helfen wollen.
       </p>
       <p class="survey-text">
-        Um an der Umfrage teilzunehmen, druecke bitte auf den Roboter:
+        Der Bot funktioniert wie ein normales Chatprogramm, ihr könnt eure Frage
+        im Eingabetextfeld eingeben, sie absenden und erhaltet dann eine
+        Antwort.
+      </p>
+      <p class="survey-text">
+        Um jedoch eine möglichst userfreundliche Erfahrung gewährleisten zu
+        können, sind wir auf euer Feedback angewiesen, weshalb wir euch noch
+        darum bitten würden an einer kurzen anonymen Umfrage teilzunehmen.
       </p>
       <div class="button-container">
-        <a href="umfrage.html" class="robot-button">
-          <img src="surveyImage.jpg" alt="Roboter" />
-        </a>
+        <a href="Bot.html" class="button button-website">Zum Bot</a>
+        <a href="umfrage.html" class="button button-survey">Zur Umfrage</a>
       </div>
     </div>
 
