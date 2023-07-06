@@ -101,3 +101,190 @@ nlu:
       - In welche Kurse muss ich?
       - In welche Module muss ich?
       - Weißt du welche Fächer ich machen muss?
+
+  - intent: faucard_functions
+    examples: |
+      - Welche Funktionen hat meine FAUcard?
+
+  - intent: university_emails
+    examples: |
+      - An welche E-Mail werden offizielle Mitteilungen der Universität gesendet?
+
+  - intent: exam_registration
+    examples: |
+      - Wie melde ich mich für meine Prüfungen an?
+
+  - intent: exam_withdrawal
+    examples: |
+      - Wie melde ich mich von einer Prüfung ab?
+
+  - intent: exam_schedule
+    examples: |
+      - Wann und wo werden meine Prüfungen stattfinden?
+
+  - intent: exam_schedule_unknown
+    examples: |
+      - Warum ist der Prüfungstermin und/oder Prüfungsort noch nicht bekannt?
+      - Wann finde ich Informationen zum Prüfungstermin und -ort?
+      - Wo kann ich den Prüfungstermin und -ort einsehen?
+      - Prüfungstermin und -ort unbekannt
+      - Wo und wann finden meine Prüfungen statt?
+
+  - intent: exam_failure_next_steps
+    examples: |
+      - Ich habe eine Prüfung nicht bestanden, was soll ich jetzt tun?
+      - Wie geht es weiter, wenn ich eine Prüfung nicht bestehe?
+      - Was passiert nach dem Nichtbestehen einer Prüfung?
+      - Welche Schritte sind nach dem Nichtbestehen einer Prüfung erforderlich?
+
+  - intent: exam_absence_illness
+    examples: |
+      - Was mache ich, wenn ich am Prüfungstag krank bin?
+      - Was soll ich tun, wenn ich krankheitsbedingt nicht zur Prüfung kommen kann?
+      - Wie gehe ich vor, wenn ich am Prüfungstag krankheitsbedingt abwesend bin?
+      - Prüfung abwesend wegen Krankheit
+
+  - intent: exam_period
+    examples: |
+      - In welchem Zeitraum finden die Prüfungen statt?
+      - Wann sind die Prüfungstermine?
+      - Welche Zeiträume sind für die Prüfungen vorgesehen?
+      - Wann finden die Prüfungen statt?
+
+  - intent: exam_result_AN
+    examples: |
+      - Was bedeutet AN?
+      - Was wird mit annullierte Leistung gemeint?
+      - AN in Bezug auf Prüfungsergebnisse
+      - Erklärung für den Begriff AN
+
+  - intent: exam_result_AR
+    examples: |
+      - Was bedeutet AR?
+      - Was wird mit angerechnete Leistung gemeint?
+      - AR in Bezug auf Prüfungsergebnisse
+      - Erklärung für den Begriff AR
+
+  - intent: exam_result_AT
+    examples: |
+      - Was bedeutet AT?
+      - Was wird mit Attest gemeint?
+      - AT in Bezug auf Prüfungsergebnisse
+      - Erklärung für den Begriff AT
+
+  - intent: exam_result_BE_EB
+    examples: |
+      - Was bedeutet BE,EB?
+      - Was wird mit bestanden und ein + bei 'Note' vermerkt gemeint?
+      - BE,EB in Bezug auf Prüfungsergebnisse
+      - Erklärung für den Begriff BE,EB
+
+  - intent: exam_result_PV
+    examples: |
+      - Was bedeutet PV?
+      - Was wird mit Prüfung vorhanden gemeint?
+      - PV in Bezug auf Prüfungsergebnisse
+      - Erklärung für den Begriff PV
+
+  - intent: exam_result_NB
+    examples: |
+      - Was bedeutet NB?
+      - Was wird mit nicht bestanden und ein - bei 'Note' vermerkt gemeint?
+      - NB in Bezug auf Prüfungsergebnisse
+      - Erklärung für den Begriff NB
+
+  - intent: exam_result_EN
+    examples: |
+      - Was bedeutet EN?
+      - Was heißt EN?
+      - Was ist die Bedeutung von EN?
+      - Was heißt endgültig nicht bestanden?
+
+  - intent: exam_result_FR
+    examples: |
+      - Was bedeutet FR?
+      - Was heißt FR?
+      - Was ist die Bedeutung von FR?
+      - Was heißt Fristüberschreitung?
+
+  - intent: exam_result_KO
+    examples: |
+      - Was bedeutet KO?
+      - Was heißt KO?
+      - Was ist die Bedeutung von KO?
+      - Was heißt Prüfungsverfahren ausgesetzt?
+
+  - intent: exam_result_NE
+    examples: |
+      - Was bedeutet NE?
+      - Was heißt NE?
+      - Was ist die Bedeutung von NE?
+      - Was heißt nicht erschienen (Anmeldung erloschen)?
+
+  - intent: exam_result_NT
+    examples: |
+      - Was bedeutet NT?
+      - Was heißt NT?
+      - Was ist die Bedeutung von NT?
+      - Was heißt Anwesenheit in der Lehrveranstaltung nicht erfüllt?
+
+  - intent: exam_result_RT
+    examples: |
+      - Was bedeutet RT?
+      - Was heißt RT?
+      - Was ist die Bedeutung von RT?
+      - Was heißt Rücktritt?
+
+  - intent: exam_result_RW
+    examples: |
+      - Was bedeutet RW?
+      - Was heißt RW?
+      - Was ist die Bedeutung von RW?
+      - Was heißt Rückweisung?
+
+  - intent: exam_result_TA
+    examples: |
+      - Was bedeutet TA?
+      - Was heißt TA?
+      - Was ist die Bedeutung von TA?
+      - Was heißt Täuschung?
+
+  - intent: exam_result_VM
+    examples: |
+      - Was bedeutet VM?
+      - Was heißt VM?
+      - Was ist die Bedeutung von VM?
+      - Was heißt Versäumnis mit Grund?
+
+  - intent: exam_result_VO
+    examples: |
+      - Was bedeutet VO?
+      - Was heißt VO?
+      - Was ist die Bedeutung von VO?
+      - Was heißt Versäumnis ohne Grund (bei bewerteten Leistungen)?
+
+  - intent: exam_result_VOU
+    examples: |
+      - Was bedeutet VOU?
+      - Was heißt VOU?
+      - Was ist die Bedeutung von VOU?
+      - Was heißt Versäumnis ohne Grund (bei unbewerteten Leistungen)?
+
+  - intent: grade_range_very_good
+    examples: |
+      - Welcher Notenschnitt zählt als sehr gut?
+      - Welche Noten gelten als sehr gut?
+      - Welche Notenskala hat die Bewertung "sehr gut"?
+      - Was sind die Anforderungen für die Note "sehr gut"?
+
+  - intent: grade_range_good
+    examples: |
+      - Welcher Notenschnitt zählt als gut?
+      - Welche Noten gelten als gut?
+      - Welche Notenskala hat die Bewertung "gut"?
+      - Was sind die Anforderungen für die Note "gut"?
+
+  - intent: grade_range_satisfactory
+    examples: |
+      - Welcher Notenschnitt zählt als befriedigend?
+      - Welche Noten gelten als befriedig

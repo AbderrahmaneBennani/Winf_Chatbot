@@ -1,6 +1,5 @@
 version: "2.0"
 
-
 intents:
   - greet
   - goodbye
@@ -15,6 +14,36 @@ intents:
   - frage_FAUCard
   - kurs_anmeldung_welche
   - nlu_fallback
+  - faucard_functions
+  - university_emails
+  - exam_registration
+  - exam_withdrawal
+  - exam_schedule
+  - exam_schedule_unknown
+  - exam_failure_next_steps
+  - exam_absence_illness
+  - exam_period
+  - exam_result_AN
+  - exam_result_AR
+  - exam_result_AT
+  - exam_result_BE_EB
+  - exam_result_PV
+  - exam_result_NB
+  - exam_result_EN
+  - exam_result_FR
+  - exam_result_KO
+  - exam_result_NE
+  - exam_result_NT
+  - exam_result_RT
+  - exam_result_RW
+  - exam_result_TA
+  - exam_result_VM
+  - exam_result_VO
+  - exam_result_VOU
+  - grade_range_very_good
+  - grade_range_good
+  - grade_range_satisfactory
+  - grade_range_sufficient
 
 responses:
   utter_greet:
@@ -35,12 +64,12 @@ responses:
 
   utter_kurs_anmeldung_error:
     - text: Es kann sein, dass der Anmeldungszeitraum noch nicht stattgefunden hat oder du ihn verpasst hast.
-    - text: Du hast entweder die Anmeldefrist verpasst oder der Kurs findet dieses Semester nicht statt. 
+    - text: Du hast entweder die Anmeldefrist verpasst oder der Kurs findet dieses Semester nicht statt.
     - text: Schau am besten nochmal nach, ob der Kurs wirklich stattfindet
-  
+
   utter_kurs_abmeldung:
     - text: Es kann sein, dass der Anmeldungszeitraum noch nicht stattgefunden hat oder du ihn verpasst hast.
-    - text: Du hast entweder die Anmeldefrist verpasst oder der Kurs findet dieses Semester nicht statt. 
+    - text: Du hast entweder die Anmeldefrist verpasst oder der Kurs findet dieses Semester nicht statt.
     - text: Schau am besten nochmal nach, ob der Kurs wirklich stattfindet
 
   utter_personalisierter_stundenplan:
@@ -61,10 +90,100 @@ responses:
 
   utter_FAUCard:
     - text: Den Studierendenausweis (FAUcard) erhalten Sie frühestens drei Wochen nach der Aktivierung Ihres Benutzerkontos vom FAUcard-Servicebüro per Post. Der Studierendenausweis kann erst erstellt werden, wenn Sie bei der oben genannten Aktivierung auch ein Passbild hochgeladen haben.
-  
+
   utter_kurs_anmeldung_welche:
     - text: Um herauszufinden, für welche Kurse Sie sich anmelden müssen, empfehle ich Ihnen, nach einem Modulplan für Ihren Studiengang in einer beliebigen Suchmaschine zu suchen. Beachten Sie dabei, dass der Studienplan je nach dem Jahr, in dem Sie Ihr Studium begonnen haben, variieren kann.
     - text: Du kannst dir entweder auf Campo die zu belegenden Fächer anschauen, oder du suchst auf der Seite der Wiso nach dem Studienverlaufsplan für den Bachelor Wirtschaftsinformatik. Achte dabei aber auf das richtige Startsemester.
 
   utter_default:
     - text: Ich habe Ihnen leider nicht verstanden. können Sie Ihre Frage bitte umformulieren?
+
+  utter_faucard_functions:
+    - text: "Die FAU-card hat viele Funktionen. Sie dient als Studierendenausweis, Bibliotheksausweis, Mensakarte und vieles mehr"
+
+  utter_university_emails:
+    - text: "Diese Mails werden an Ihre eigene FAUMail zugesendet. Ein Beispiel für die E-Mail wäre vorname.nachname@fau.de. Das E-Mail-Passwort ist standardmäßig gleich dem idM-Passwort"
+
+  utter_exam_registration:
+    - text: "Du gehst auf https://www.campo.fau.de/ und meldest dich an. Oben links gehst du auf das Menü -> Mein Studium -> Studienplaner mit Modulplan. Hier kannst du die Module auswählen, in denen du deine Prüfungen schreiben möchtest."
+
+  utter_exam_withdrawal:
+    - text: "Du gehst auf https://www.studon.fau.de/ und meldest dich an. Oben links gehst du auf das Menü -> Mein Studium -> Studienplaner mit Modulplan. Hier kannst du dein Modul auswählen, indem du dich abmelden möchtest."
+
+  utter_exam_schedule:
+    - text: "Du gehst auf https://www.campo.fau.de/ und meldest dich an. Oben links gehst du auf das Menü -> Mein Studium -> Leistungen. Unten kannst du deine angemeldeten Prüfungen als PDF runterladen. Dort wirst du die Prüfungstermine und Prüfungsorte zu den einzelnen Modulen finden."
+
+  utter_exam_schedule_unknown:
+    - text: "Es kann sein, dass die Prüfungstermine noch nicht ganz bekannt stehen. Daher sollte man erstmal abwarten."
+
+  utter_exam_failure_next_steps:
+    - text: "Normalerweise hat man drei Versuche für jedes Modul, außer wenn es sich um ein GOP-Modul handelt. In diesem Fall hat man insgesamt nur zwei Versuche. Falls man in diesen Versuchen ein Modul nicht besteht, muss man einen Härtefallantrag an die FAU stellen. Wenn dieser Antrag genehmigt wird, erhält man eine weitere Chance, um das Modul zu bestehen."
+
+  utter_exam_absence_illness:
+    - text: "Du gehst zu einem Arzt und besorgst dir ein Attest. Anschließend musst du dieses im Prüfungsamt nachreichen. Wenn du ohne Grund nicht am Prüfungsort erscheinst, erhältst du einen Fehlversuch."
+
+  utter_exam_period:
+    - text: "Die Prüfungen finden in der vorlesungsfreien Zeit statt."
+
+  utter_exam_result_AN:
+    - text: "annullierte Leistung."
+
+  utter_exam_result_AR:
+    - text: "angerechnete Leistung."
+
+  utter_exam_result_AT:
+    - text: "Attest."
+
+  utter_exam_result_BE_EB:
+    - text: "bestanden (im Falle von unbenoteten Leistungen auch durch ein + bei 'Note' vermerkt)."
+
+  utter_exam_result_PV:
+    - text: "Prüfung vorhanden."
+
+  utter_exam_result_NB:
+    - text: "nicht bestanden (im Falle von unbenoteten Leistungen auch durch ein - bei 'Note' vermerkt)."
+
+  utter_exam_result_EN:
+    - text: "endgültig nicht bestanden."
+
+  utter_exam_result_FR:
+    - text: "Fristüberschreitung."
+
+  utter_exam_result_KO:
+    - text: "Prüfungsverfahren ausgesetzt."
+
+  utter_exam_result_NE:
+    - text: "nicht erschienen (Anmeldung erloschen)."
+
+  utter_exam_result_NT:
+    - text: "Anwesenheit in der Lehrveranstaltung nicht erfüllt."
+
+  utter_exam_result_RT:
+    - text: "Rücktritt."
+
+  utter_exam_result_RW:
+    - text: "Rückweisung."
+
+  utter_exam_result_TA:
+    - text: "Täuschung."
+
+  utter_exam_result_VM:
+    - text: "Versäumnis mit Grund."
+
+  utter_exam_result_VO:
+    - text: "Versäumnis ohne Grund (bei bewerteten Leistungen)."
+
+  utter_exam_result_VOU:
+    - text: "Versäumnis ohne Grund (bei unbewerteten Leistungen)."
+
+  utter_grade_range_very_good:
+    - text: "1,00/1,30."
+
+  utter_grade_range_good:
+    - text: "1,70/2,00/2,30."
+
+  utter_grade_range_satisfactory:
+    - text: "2,70/3,00/3,30."
+
+  utter_grade_range_sufficient:
+    - text: "3,70/4,00."

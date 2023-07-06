@@ -1,6 +1,5 @@
 version: "2.0"
 
-
 rules:
   - rule: Beispielfrage-Kurs-Anmeldung
     steps:
@@ -11,7 +10,7 @@ rules:
     steps:
       - intent: kurs_anmeldung_error
       - action: utter_kurs_anmeldung_error
-  
+
   - rule: Beispielfrage-Kurs-Abmeldung
     steps:
       - intent: kurs_abmeldung
@@ -66,4 +65,153 @@ rules:
     steps:
       - intent: frage_FAUCard
       - action: utter_FAUCard
- 
+
+  - rule: Respond to faucard_functions
+    steps:
+      - intent: faucard_functions
+      - action: utter_faucard_functions
+
+  - rule: Respond to university_emails
+    steps:
+      - intent: university_emails
+      - action: utter_university_emails
+
+  - rule: Respond to exam_registration
+    steps:
+      - intent: exam_registration
+      - action: utter_exam_registration
+
+  - rule: Respond to exam_withdrawal
+    steps:
+      - intent: exam_withdrawal
+      - action: utter_exam_withdrawal
+
+  - rule: Respond to exam_schedule
+    steps:
+      - intent: exam_schedule
+      - action: utter_exam_schedule
+
+  - rule: Reply to exam schedule unknown
+    steps:
+      - intent: exam_schedule_unknown
+      - action: utter_exam_schedule_unknown
+
+  - rule: Reply to exam failure next steps
+    steps:
+      - intent: exam_failure_next_steps
+      - action: utter_exam_failure_next_steps
+
+  - rule: Reply to exam absence illness
+    steps:
+      - intent: exam_absence_illness
+      - action: utter_exam_absence_illness
+
+  - rule: Reply to exam period
+    steps:
+      - intent: exam_period
+      - action: utter_exam_period
+
+  - rule: Reply to exam result AN
+    steps:
+      - intent: exam_result_AN
+      - action: utter_exam_result_AN
+
+  - rule: Reply to exam result AR
+    steps:
+      - intent: exam_result_AR
+      - action: utter_exam_result_AR
+
+  - rule: Reply to exam result AT
+    steps:
+      - intent: exam_result_AT
+      - action: utter_exam_result_AT
+
+  - rule: Reply to exam result BE_EB
+    steps:
+      - intent: exam_result_BE_EB
+      - action: utter_exam_result_BE_EB
+
+  - rule: Reply to exam result PV
+    steps:
+      - intent: exam_result_PV
+      - action: utter_exam_result_PV
+
+  - rule: Reply to exam result NB
+    steps:
+      - intent: exam_result_NB
+      - action: utter_exam_result_NB
+
+  - rule: Respond to exam result EN
+    steps:
+      - intent: exam_result_EN
+      - action: utter_exam_result_EN
+
+  - rule: Respond to exam result FR
+    steps:
+      - intent: exam_result_FR
+      - action: utter_exam_result_FR
+
+  - rule: Respond to exam result KO
+    steps:
+      - intent: exam_result_KO
+      - action: utter_exam_result_KO
+
+  - rule: Respond to exam result NE
+    steps:
+      - intent: exam_result_NE
+      - action: utter_exam_result_NE
+
+  - rule: Respond to exam result NT
+    steps:
+      - intent: exam_result_NT
+      - action: utter_exam_result_NT
+
+  - rule: Respond to exam result RT
+    steps:
+      - intent: exam_result_RT
+      - action: utter_exam_result_RT
+
+  - rule: Respond to exam result RW
+    steps:
+      - intent: exam_result_RW
+      - action: utter_exam_result_RW
+
+  - rule: Respond to exam result TA
+    steps:
+      - intent: exam_result_TA
+      - action: utter_exam_result_TA
+
+  - rule: Respond to exam result VM
+    steps:
+      - intent: exam_result_VM
+      - action: utter_exam_result_VM
+
+  - rule: Respond to exam result VO
+    steps:
+      - intent: exam_result_VO
+      - action: utter_exam_result_VO
+
+  - rule: Respond to exam result VOU
+    steps:
+      - intent: exam_result_VOU
+      - action: utter_exam_result_VOU
+
+  - rule: Respond to grade range very good
+    steps:
+      - intent: grade_range_very_good
+      - action: utter_grade_range_very_good
+
+  - rule: Respond to grade range good
+    steps:
+      - intent: grade_range_good
+      - action: utter_grade_range_good
+
+  - rule: Respond to grade range satisfactory
+    steps:
+      - intent: grade_range_satisfactory
+      - action: utter_grade_range_satisfactory
+
+  - rule: Respond to grade range sufficient
+    steps:
+      - intent: grade_range_sufficient
+      - action: utter_grade_range_sufficient

@@ -1,6 +1,5 @@
 version: "2.0"
 
-
 stories:
   - story: Beispielnutzung-Kurs-Anmeldung
     steps:
@@ -19,7 +18,6 @@ stories:
       - action: utter_kurs_anmeldung_error
       - intent: goodbye
       - action: utter_goodbye
-
 
   - story: Beispielnutzung-Kurs-Abmeldung
     steps:
@@ -84,7 +82,6 @@ stories:
       - intent: goodbye
       - action: utter_goodbye
 
-
   - story: Beispielnutzung-Kurs-Anmeldung-Welche
     steps:
       - intent: greet
@@ -94,4 +91,152 @@ stories:
       - intent: goodbye
       - action: utter_goodbye
 
-  
+  - story: FAUCard Functions
+    steps:
+      - intent: faucard_functions
+      - action: utter_faucard_functions
+
+  - story: University Emails
+    steps:
+      - intent: university_emails
+      - action: utter_university_emails
+
+  - story: Exam Registration
+    steps:
+      - intent: exam_registration
+      - action: utter_exam_registration
+
+  - story: Exam Withdrawal
+    steps:
+      - intent: exam_withdrawal
+      - action: utter_exam_withdrawal
+
+  - story: Exam Schedule
+    steps:
+      - intent: exam_schedule
+      - action: utter_exam_schedule
+
+  - story: Exam Schedule Unknown
+    steps:
+      - intent: exam_schedule_unknown
+      - action: utter_exam_schedule_unknown
+
+  - story: Exam Failure Next Steps
+    steps:
+      - intent: exam_failure_next_steps
+      - action: utter_exam_failure_next_steps
+
+  - story: Exam Absence Illness
+    steps:
+      - intent: exam_absence_illness
+      - action: utter_exam_absence_illness
+
+  - story: Exam Period
+    steps:
+      - intent: exam_period
+      - action: utter_exam_period
+
+  - story: Exam Result AN
+    steps:
+      - intent: exam_result_AN
+      - action: utter_exam_result_AN
+
+  - story: Exam Result AR
+    steps:
+      - intent: exam_result_AR
+      - action: utter_exam_result_AR
+
+  - story: Exam Result AT
+    steps:
+      - intent: exam_result_AT
+      - action: utter_exam_result_AT
+
+  - story: Exam Result BE_EB
+    steps:
+      - intent: exam_result_BE_EB
+      - action: utter_exam_result_BE_EB
+
+  - story: Exam Result PV
+    steps:
+      - intent: exam_result_PV
+      - action: utter_exam_result_PV
+
+  - story: Exam Result NB
+    steps:
+      - intent: exam_result_NB
+      - action: utter_exam_result_NB
+
+  - story: Exam Result EN
+    steps:
+      - intent: exam_result_EN
+      - action: utter_exam_result_EN
+
+  - story: Exam Result FR
+    steps:
+      - intent: exam_result_FR
+      - action: utter_exam_result_FR
+
+  - story: Exam Result KO
+    steps:
+      - intent: exam_result_KO
+      - action: utter_exam_result_KO
+
+  - story: Exam Result NE
+    steps:
+      - intent: exam_result_NE
+      - action: utter_exam_result_NE
+
+  - story: Exam Result NT
+    steps:
+      - intent: exam_result_NT
+      - action: utter_exam_result_NT
+
+  - story: Exam Result RT
+    steps:
+      - intent: exam_result_RT
+      - action: utter_exam_result_RT
+
+  - story: Exam Result RW
+    steps:
+      - intent: exam_result_RW
+      - action: utter_exam_result_RW
+
+  - story: Exam Result TA
+    steps:
+      - intent: exam_result_TA
+      - action: utter_exam_result_TA
+
+  - story: Exam Result VM
+    steps:
+      - intent: exam_result_VM
+      - action: utter_exam_result_VM
+
+  - story: Exam Result VO
+    steps:
+      - intent: exam_result_VO
+      - action: utter_exam_result_VO
+
+  - story: Exam Result VOU
+    steps:
+      - intent: exam_result_VOU
+      - action: utter_exam_result_VOU
+
+  - story: Grade Range Very Good
+    steps:
+      - intent: grade_range_very_good
+      - action: utter_grade_range_very_good
+
+  - story: Grade Range Good
+    steps:
+      - intent: grade_range_good
+      - action: utter_grade_range_good
+
+  - story: Grade Range Satisfactory
+    steps:
+      - intent: grade_range_satisfactory
+      - action: utter_grade_range_satisfactory
+
+  - story: Grade Range Sufficient
+    steps:
+      - intent: grade_range_sufficient
+      - action: utter_grade_range_sufficient
