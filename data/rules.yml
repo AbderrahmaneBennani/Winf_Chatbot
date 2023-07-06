@@ -215,3 +215,125 @@ rules:
     steps:
       - intent: grade_range_sufficient
       - action: utter_grade_range_sufficient
+
+  - rule: Provide information about Wirtschaftsinformatik study program
+    steps:
+      - intent: ask_winf_schedule
+      - action: utter_ask_winf_schedule
+
+  - rule: Provide information about Wirtschaftsinformatik study modules
+    steps:
+      - intent: ask_winf_modules
+      - action: utter_ask_winf_modules
+  
+  - rule: Provide information about Wirtschaftsinformatik study program
+    steps:
+      - intent: ask_winf_schedule
+      - action: utter_ask_winf_schedule
+
+  - rule: Provide information about Wirtschaftsinformatik study modules
+    steps:
+      - intent: ask_winf_modules
+      - action: utter_ask_winf_modules
+
+  - rule: Provide information about GOP modules
+    steps:
+      - intent: ask_gop_modules
+      - action: utter_ask_gop_modules
+
+  - rule: Provide information about Informatik modules
+    steps:
+      - intent: ask_informatik_modules
+      - action: utter_ask_informatik_modules
+
+  - rule: Provide information about Wirtschaftsinformatik modules
+    steps:
+      - intent: ask_ba_modules
+      - action: utter_ask_ba_modules
+
+  - rule: Provide information about Methodische Grundlagen modules
+    steps:
+      - intent: ask_methodische_grundlagen_modules
+      - action: utter_ask_methodische_grundlagen_modules
+
+  - rule: Provide information about Seminare und Reflexion modules
+    steps:
+      - intent: ask_seminare_reflexion_modules
+      - action: utter_ask_seminare_reflexion_modules
+
+  - rule: Provide information about Bachelorarbeit module
+    steps:
+      - intent: ask_bachelorarbeit_modules
+      - action: utter_ask_bachelorarbeit_modules
+
+  - rule: Provide information about total ECTS
+    steps:
+      - intent: ask_total_ects
+      - action: utter_total_ects
+
+  - rule: Provide information about Regelstudienzeit
+    steps:
+      - intent: ask_regelstudienzeit
+      - action: utter_ask_regelstudienzeit
+
+  - rule: Provide information about Berufsfelder in Wirtschaftsinformatik
+    steps:
+      - intent: ask_berufsfelder
+      - action: utter_ask_berufsfelder
+
+  - rule: Provide information about Zulassungsfreiheit in Wirtschaftsinformatik
+    steps:
+      - intent: ask_zulassungsfrei
+      - action: utter_ask_zulassungsfrei
+
+  - rule: Provide information about Praktikum vor Studienbeginn
+    steps:
+      - intent: ask_praktikum_vor_studienbeginn
+      - action: utter_ask_praktikum_vor_studienbeginn
+
+  - rule: Provide information about the meaning of FS
+    steps:
+      - intent: ask_bedeutung_fs
+      - action: utter_ask_bedeutung_fs
+
+  - rule: Provide information about the meaning of RSZ
+    steps:
+      - intent: ask_bedeutung_rsz
+      - action: utter_ask_bedeutung_rsz
+
+  - rule: Provide information about the meaning of iRSZ
+    steps:
+      - intent: ask_bedeutung_irsz
+      - action: utter_ask_bedeutung_irsz
+
+  - rule: Respond to how are you
+    steps:
+      - intent: how_are_you
+      - action: utter_how_are_you
+
+  - rule: Respond to introduction
+    steps:
+      - intent: introduction
+      - action: utter_introduction
+
+  - rule: Respond to introduction
+    steps:
+      - intent: ask_name
+      - action: utter_ask_name
+
+  - rule: Respond to ask study advisor
+    steps:
+      - intent: ask_study_advisor
+      - action: utter_study_advisor
+
+  - rule: Respond to ask module difficulty
+    steps:
+      - intent: ask_module_difficulty
+      - action: utter_module_difficulty
+
+
+
+
+
+
+

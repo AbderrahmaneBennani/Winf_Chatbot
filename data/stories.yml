@@ -240,3 +240,144 @@ stories:
     steps:
       - intent: grade_range_sufficient
       - action: utter_grade_range_sufficient
+
+  - story: Inquire about the structure of the Wirtschaftsinformatik study program
+    steps:
+      - intent: ask_winf_schedule
+      - action: utter_ask_winf_schedule
+
+  - story: Inquire about the modules of the Wirtschaftsinformatik study program
+    steps:
+      - intent: ask_winf_modules
+      - action: utter_ask_winf_modules
+
+  - story: Inquire about the modules of the GOP in Wirtschaftsinformatik study program
+    steps:
+      - intent: ask_gop_modules
+      - action: utter_ask_gop_modules
+
+  - story: Inquire about the modules in the Informatik area of the Wirtschaftsinformatik study program
+    steps:
+      - intent: ask_informatik_modules
+      - action: utter_ask_informatik_modules
+
+  - story: Inquire about the modules in the Wirtschaftsinformatik area of the study program
+    steps:
+      - intent: ask_ba_modules
+      - action: utter_ask_ba_modules
+  
+  - story: Inquire about the modules in the Methodische Grundlagen area of the study program
+    steps:
+      - intent: ask_methodische_grundlagen_modules
+      - action: utter_ask_methodische_grundlagen_modules
+  
+  - story: Inquire about the modules in the Seminare und Reflexion area of the study program
+    steps:
+      - intent: ask_seminare_reflexion_modules
+      - action: utter_ask_seminare_reflexion_modules
+
+  - story: Inquire about the module in the Bachelorarbeit area of the study program
+    steps:
+      - intent: ask_bachelorarbeit_modules
+      - action: utter_ask_bachelorarbeit_modules
+  
+  - story: Inquire about the total ECTS required in the study program
+    steps:
+      - intent: ask_total_ects
+      - action: utter_total_ects
+  
+  - story: Inquire about the Regelstudienzeit in the study program
+    steps:
+      - intent: ask_regelstudienzeit
+      - action: utter_ask_regelstudienzeit
+
+  - story: Inquire about the possible career fields in Wirtschaftsinformatik
+    steps:
+      - intent: ask_berufsfelder
+      - action: utter_ask_berufsfelder
+
+  - story: Inquire about the admission requirements for the Wirtschaftsinformatik study program
+    steps:
+      - intent: ask_zulassungsfrei
+      - action: utter_ask_zulassungsfrei
+
+  - story: Inquire about the necessity of an internship before starting the study
+    steps:
+      - intent: ask_praktikum_vor_studienbeginn
+      - action: utter_ask_praktikum_vor_studienbeginn
+
+  - story: Inquire about the meaning of FS
+    steps:
+      - intent: ask_bedeutung_fs
+      - action: utter_ask_bedeutung_fs
+
+  - story: Inquire about the meaning of RSZ
+    steps:
+      - intent: ask_bedeutung_rsz
+      - action: utter_ask_bedeutung_rsz
+  
+  - story: Inquire about the meaning of iRSZ
+    steps:
+      - intent: ask_bedeutung_irsz
+      - action: utter_ask_bedeutung_irsz
+  
+  - story: Inquire about the important platforms for studying
+    steps:
+     - intent: ask_wichtige_plattformen
+     - action: utter_ask_wichtige_plattformen
+
+  - story: Inquire about how to pay the semester fee
+    steps:
+     - intent: ask_semesterbeitrag_zahlung
+     - action: utter_ask_semesterbeitrag_zahlung
+
+  - story: Inquire about payment when discontinuing studies
+    steps:
+     - intent: ask_beitrag_zahlung_bei_studiumsabbruch
+     - action: utter_ask_beitrag_zahlung_bei_studiumsabbruch
+
+  - story: Inquire about finding the Immatrikulationsbescheinigung
+    steps:
+     - intent: ask_immatrikulationsbescheinigung
+     - action: utter_ask_immatrikulationsbescheinigung
+
+  - story: User greets and asks for Notenspiegel
+    steps:
+     - intent: ask_notenspiegel
+     - action: utter_ask_notenspiegel
+    
+  - story: User greets and asks for Studienverlauf
+    steps:
+    - intent: ask_studienverlauf
+    - action: utter_ask_studienverlauf
+
+  - story: User greets and asks about Wirtschaftsinformatik
+    steps:
+    - intent: ask_wirtschaftsinformatik
+    - action: utter_ask_wirtschaftsinformatik
+
+  - story: Ask how are you
+    steps:
+    - intent: how_are_you
+    - action: utter_how_are_you
+
+  - story: Introduce and ask for help
+    steps:
+    - intent: introduction
+    - action: utter_introduction
+    
+  - story: Ask name
+    steps:
+    - intent: ask_name
+    - action: utter_ask_name
+  
+  - story: Ask for study advisor
+    steps:
+    - intent: ask_study_advisor
+    - action: utter_study_advisor
+  
+  - story: Ask about module difficulty
+    steps:
+    - intent: ask_module_difficulty
+    - action: utter_module_difficulty
+      

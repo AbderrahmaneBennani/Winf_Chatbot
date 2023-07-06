@@ -288,3 +288,202 @@ nlu:
     examples: |
       - Welcher Notenschnitt zählt als befriedigend?
       - Welche Noten gelten als befriedig
+
+  - intent: ask_winf_schedule
+    examples: |
+     - Wie ist das Bachelorstudium von Wirtschaftsinformatik aufgebaut?
+  
+  - intent: ask_winf_modules
+    examples: |
+     - Aus welchen Bereichen besteht der Bachelor in Wirtschaftsinformatik laut Modulplan?
+     - Welche Module sind im Wirtschaftsinformatik-Studium enthalten?
+     - Kannst du mir die Bereiche des Bachelorstudiums in Wirtschaftsinformatik nennen?
+     - Welche Fachgebiete umfasst der Wirtschaftsinformatik-Studiengang?
+
+  - intent: ask_gop_modules
+    examples: |
+     - Zu welchen Modulen gehört die Grundlagen- und Orientierungsphase (GOP)?
+     - Welche Kurse sind Teil der GOP im Wirtschaftsinformatik-Studium?
+     - Kannst du mir die Module der Grundlagen- und Orientierungsphase nennen?
+     - Welche Fachgebiete werden in der GOP behandelt?
+     - Was sind die grundlegenden Module des Wirtschaftsinformatik-Studiums?
+
+  - intent: ask_informatik_modules
+    examples: |
+     - Zu welchen Modulen gehört der Bereich Informatik?
+     - Welche Kurse sind Teil des Informatik-Bereichs im Wirtschaftsinformatik-Studium?
+     - Kannst du mir die Module im Bereich Informatik nennen?
+     - Welche Fachgebiete werden in der Informatik behandelt?
+     - Welche Module gehören zum Pflichtbereich Informatik?
+     - Was sind die Wahlpflichtmodule im Bereich Informatik?
+  
+  - intent: ask_ba_modules
+    examples: |
+     - Zu welchen Modulen gehört der Bereich Wirtschaftsinformatik?
+     - Welche Kurse sind Teil des Wirtschaftsinformatik-Bereichs im Studium?
+     - Kannst du mir die Module im Bereich Wirtschaftsinformatik nennen?
+     - Welche Fachgebiete werden in der Wirtschaftsinformatik behandelt?
+     - Welche Module gehören zum Pflichtbereich Wirtschaftsinformatik?
+     - Was sind die Wahlpflichtmodule im Bereich Wirtschaftsinformatik?
+  
+  - intent: ask_methodische_grundlagen_modules
+    examples: |
+     - Zu welchen Modulen gehört der Bereich Methodische Grundlagen?
+     - Welche Kurse sind Teil des Methodische Grundlagen-Bereichs im Studium?
+     - Kannst du mir die Module im Bereich Methodische Grundlagen nennen?
+     - Welche Fachgebiete werden in den Methodische Grundlagen behandelt?
+     - Welche Module gehören zum Pflichtbereich Methodische Grundlagen?
+     - Was sind die Wahlpflichtmodule im Bereich Methodische Grundlagen?
+
+  - intent: ask_seminare_reflexion_modules
+    examples: |
+     - Zu welchen Modulen gehört der Bereich Seminare und Reflexion?
+     - Welche Kurse sind Teil des Bereichs Seminare und Reflexion im Studium?
+     - Kannst du mir die Module im Bereich Seminare und Reflexion nennen?
+     - Welche Module werden im Bereich Seminare und Reflexion angeboten?
+     - Welche Seminare und Reflexionsmodule gibt es im Studium?
+
+  - intent: ask_bachelorarbeit_modules
+    examples: |
+     - Zu welchem Modul gehört der Bereich Bachelorarbeit?
+     - Welches Modul ist Teil der Bachelorarbeit im Studium?
+     - Kannst du mir das Modul im Bereich Bachelorarbeit nennen?
+     - Welches Modul beinhaltet die Bachelorarbeit?
+
+  - intent: ask_total_ects
+    examples: |
+     - Wie viele ECTS-Punkte müssen im gesamten Studium erreicht werden?
+     - Wie viele ECTS sind für das Studium insgesamt erforderlich?
+     - Wie viele Leistungspunkte werden für das gesamte Studium benötigt?
+
+  - intent: ask_regelstudienzeit
+    examples: |
+     - Wie lange geht die Regelstudienzeit?
+     - Wie viele Semester dauert das Regelstudium?
+     - Wie lang ist die typische Studiendauer?
+  
+  - intent: ask_berufsfelder
+    examples: |
+     - Welche Berufsfelder sind in Wirtschaftsinformatik möglich?
+     - Welche Karrieremöglichkeiten gibt es in der Wirtschaftsinformatik?
+     - In welchen Bereichen können Wirtschaftsinformatiker/-innen arbeiten?
+     - Was sind typische Berufsfelder für Absolventen der Wirtschaftsinformatik?
+     - Welche Jobaussichten gibt es in der Wirtschaftsinformatik?
+
+  - intent: ask_zulassungsfrei
+    examples: |
+     - Ist der Studiengang Wirtschaftsinformatik zulassungsfrei?
+     - Gibt es eine Zulassungsbeschränkung für Wirtschaftsinformatik?
+     - Muss man sich für das Studium der Wirtschaftsinformatik bewerben?
+     - Wie sieht es mit der Zulassung zum Wirtschaftsinformatik-Studium aus?
+     - Gibt es einen NC für Wirtschaftsinformatik?
+
+  - intent: ask_praktikum_vor_studienbeginn
+    examples: |
+     - Ist ein Praktikum vor Studienbeginn erforderlich?
+     - Muss man vor Studienbeginn ein Praktikum absolvieren?
+     - Gibt es eine Praktikumsverpflichtung vor dem Studium?
+     - Ist es empfehlenswert, vor Studienbeginn ein Praktikum zu machen?
+
+  - intent: ask_bedeutung_fs
+    examples: |
+     - Was bedeutet FS?
+     - Wofür steht FS?
+     - Kannst du mir die Abkürzung FS erklären?
+     - Was wird mit Fachsemester gemeint?
+
+  - intent: ask_bedeutung_rsz
+    examples: |
+     - Was bedeutet RSZ?
+     - Wofür steht RSZ?
+     - Kannst du mir die Abkürzung RSZ erklären?
+     - Was ist die Regelstudienzeit eines Studiengangs?
+
+  - intent: ask_bedeutung_irsz
+    examples: |
+     - Was bedeutet iRSZ?
+     - Wofür steht iRSZ?
+     - Kannst du mir die Abkürzung iRSZ erklären?
+     - Was ist die individuelle Regelstudienzeit?
+
+  - intent: ask_wichtige_plattformen
+    examples: |
+     - Welche Plattformen sind wichtig für das Studium?
+     - Welche Online-Plattformen werden im Studium verwendet?
+     - Wo finde ich wichtige Informationen für das Studium?
+     - Kannst du mir die relevanten Studienplattformen nennen?
+
+  - intent: ask_semesterbeitrag_zahlung
+    examples: |
+     - Wie kann ich meinen Semesterbeitrag bezahlen?
+     - Wo finde ich die Bankdaten für die Überweisung meines Semesterbeitrags?
+     - Welche Informationen benötige ich für die Zahlung meines Semesterbeitrags?
+     - Wo kann ich meine Beitragszahlungsinformationen finden?
+
+  - intent: ask_beitrag_zahlung_bei_studiumsabbruch
+    examples: |
+     - Muss ich meinen Beitrag zahlen, wenn ich mein Studium nicht fortsetze?
+     - Ist eine Beitragszahlung erforderlich, wenn ich mein Studium abbreche?
+     - Muss ich meinen Semesterbeitrag zahlen, wenn ich mein Studium nicht weiterführe?
+     - Wie sieht es mit der Beitragszahlung aus, wenn ich mein Studium beende?
+
+  - intent: ask_immatrikulationsbescheinigung
+    examples: |
+     - Wo finde ich meine Immatrikulationsbescheinigung?
+     - Wie erhalte ich meine Immatrikulationsbescheinigung?
+     - Wo kann ich meine Immatrikulationsunterlagen finden?
+     - Wie komme ich an meine Immatrikulationsbescheinigung?
+  
+  - intent: ask_notenspiegel
+    examples: |
+     - Wo finde ich meinen Notenspiegel?
+     - Wie kann ich meinen Notenspiegel einsehen?
+     - Woher bekomme ich meine Notenübersicht?
+     - Wie erhalte ich meine Notenbescheinigung?
+  
+  - intent: ask_studienverlauf
+    examples: |
+     - Wo finde ich meinen Studienverlauf?
+     - Wie kann ich meinen Studienverlauf einsehen?
+     - Woher bekomme ich meine Studienverlaufsinformationen?
+     - Wie erhalte ich meinen Studienverlaufsbericht?
+
+  - intent: ask_wirtschaftsinformatik
+    examples: |
+     - Was ist Wirtschaftsinformatik?
+     - Was bedeutet Wirtschaftsinformatik?
+     - Kannst du mir erklären, was Wirtschaftsinformatik ist?
+     - Wie wird Wirtschaftsinformatik definiert?
+
+  - intent: how_are_you
+    examples: |
+      - Wie geht es dir?
+      - Wie ist deine Stimmung?
+
+  - intent: introduction
+    examples: |
+      - Wer bist du?
+      - Was bist du?
+
+  - intent: ask_name
+    examples: |
+      - Wie heißt du?
+      - Wer bist du?
+      - Was ist dein Name?
+  
+  - intent: ask_study_advisor
+    examples: |
+      - Wer ist der Studienberater?
+      - Wo finde ich den Studienberater?
+      - Wer ist das?
+      - Wo finde ich ihn?
+      - Wer ist der Fachberater?
+      - Gibt es einen Fachstudienberater?
+  
+  - intent: ask_module_difficulty
+    examples: |
+      - Ist das Modul schwer?
+      - Wie schwierig ist das Modul?
+      - Ist das schwer?
+      - Ist das Modul machbar? 
+      - Soll ich das machen?
