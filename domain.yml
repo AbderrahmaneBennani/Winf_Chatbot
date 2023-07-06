@@ -4,19 +4,17 @@ version: "2.0"
 intents:
   - greet
   - goodbye
-  - frage_kurs_registrierung
-  - frage_registrierungsfehler
-  - nlu_fallback
+  - kurs_anmeldung
+  - kurs_anmeldung_error
+  - kurs_abmeldung
+  - personalisierter_stundenplan
   - frage_immatrikulation
   - frage_zulassungsfrei
   - frage_NC
   - frage_Unterlagen
   - frage_FAUCard
-  - kurs_anmeldung
-  - kurs_anmeldung_error
-  - kurs_abmeldung
-  - personalisierter_stundenplan
   - kurs_anmeldung_welche
+  - nlu_fallback
 
 responses:
   utter_greet:
@@ -49,9 +47,6 @@ responses:
     - text: Anhand deiner Kurse wird ein automatischer Stundenplan erstellt auf https://www.campo.fau.de/. Oben links gehst du auf das Menü -> Mein Studium -> Stundenplan. Wenn du deinen eigenen manuellen Stundenplan erstellen möchtest, dann kannst du dies auf slot.cs.fau.de machen.
     - text: Entweder du lässt ihn automatisch über Campo erstellen, oder du machst es über "slot.cs.fau.de"
 
-  utter_default:
-    - text: Ich habe Ihnen leider nicht verstanden. können Sie Ihre Frage bitte umformulieren?
-
   utter_immatrikulation:
     - text: Nach erfolgreicher Registrierung bzw. Bewerbung in campo.fau.de bzw. im bundesweiten Auswahlverfahren von hochschulstart.de und der Überweisung des Semesterbeitrags können Sie sich mit allen erforderlichen Unterlagen während der vorgesehenen Fristen einschreiben.
 
@@ -70,3 +65,6 @@ responses:
   utter_kurs_anmeldung_welche:
     - text: Um herauszufinden, für welche Kurse Sie sich anmelden müssen, empfehle ich Ihnen, nach einem Modulplan für Ihren Studiengang in einer beliebigen Suchmaschine zu suchen. Beachten Sie dabei, dass der Studienplan je nach dem Jahr, in dem Sie Ihr Studium begonnen haben, variieren kann.
     - text: Du kannst dir entweder auf Campo die zu belegenden Fächer anschauen, oder du suchst auf der Seite der Wiso nach dem Studienverlaufsplan für den Bachelor Wirtschaftsinformatik. Achte dabei aber auf das richtige Startsemester.
+
+  utter_default:
+    - text: Ich habe Ihnen leider nicht verstanden. können Sie Ihre Frage bitte umformulieren?
