@@ -74,10 +74,6 @@ intents:
   - ask_study_advisor
   - ask_module_difficulty
 
-
-
-
-
 responses:
   utter_greet:
     - text: Hallo! Wie kann ich dir bei Fragen zur Universität helfen?
@@ -129,6 +125,9 @@ responses:
     - text: Du kannst dir entweder auf Campo die zu belegenden Fächer anschauen, oder du suchst auf der Seite der Wiso nach dem Studienverlaufsplan für den Bachelor Wirtschaftsinformatik. Achte dabei aber auf das richtige Startsemester.
 
   utter_default:
+    - text: Ich habe deine Frage leider nicht verstanden. Kannst du sie bitte umformulieren?
+
+  utter_please_rephrase:
     - text: Ich habe deine Frage leider nicht verstanden. Kannst du sie bitte umformulieren bzw. in ganzen Sätzen sprechen?
 
   utter_faucard_functions:
@@ -235,13 +234,13 @@ responses:
 
   utter_ask_ba_modules:
     - text: "Die Module, die zum Bereich Wirtschaftsinformatik gehören, sind:\nPflichtbereich Wirtschaftsinformatik:\nWIN-Projektwoche\nBusiness and Information System Engineering (GOP)\nData Science: Machine Learning und Data Driven Business\nData Science: Datenmanagement und -analyse für Wirtschaftsinformatik (GOP)\nBusiness Process Management (GOP)\nManaging Projects Successfully\n\nWahlpflichtbereich Wirtschaftsinformatik:\n-Data and Knowledge\n-Digital Business and Processes\n-Architectures and Development."
-  
+
   utter_ask_methodische_grundlagen_modules:
     - text: "Die Module, die zum Bereich Methodische Grundlagen gehören, sind:\n-Pflichtbereich Methodische Grundlagen:\n-Data Science: Datenauswertung\n-Data Science: Statistik\n-Wahlpflichtbereich Methodische Grundlagen:\n-Wahlpflichtbereich Methodische Grundlagen."
 
   utter_ask_seminare_reflexion_modules:
     - text: "Die Module, die zum Bereich Seminare und Reflexion gehören, sind:\n- Projektseminar Wirtschaftsinformatik\n- Forschungsmethodisches Seminar."
-  
+
   utter_ask_bachelorarbeit_modules:
     - text: "Das Modul, das zum Bereich Bachelorarbeit gehört, ist:\n- Bachelorarbeit (inkl. Seminar)."
 
@@ -259,7 +258,7 @@ responses:
 
   utter_ask_praktikum_vor_studienbeginn:
     - text: "Nein, ein Praktikum vor Studienbeginn ist nicht notwendig."
-  
+
   utter_ask_bedeutung_fs:
     - text: "FS steht für Fachsemester. Es wird verwendet, um die Anzahl der Fachsemester im Studium anzugeben."
 
@@ -271,13 +270,13 @@ responses:
 
   utter_ask_wichtige_plattformen:
     - text: "Die wichtigsten Plattformen für das Studium sind:\n- Studon: [https://www.studon.fau.de/](https://www.studon.fau.de/)\n  Hier findest du Lernmaterialien (Skripte, Lernmodule, Glossare etc.), Übungen, Arbeitsgruppen, Foren und vieles mehr zu deinen Kursen. Die Plattform wird auch zur Kursanmeldung genutzt.\n- Campo: [https://www.campo.fau.de/](https://www.campo.fau.de/)\n  Deine Website für die offizielle Prüfungsanmeldung, deinen Notenspiegel oder diverse Bescheinigungen (BAföG, Immatrikulation etc.). Über diesen Online-Dienst hast du dich an der FAU beworben.\n- Videoportal der FAU: [https://www.fau.tv/](https://www.fau.tv/)\n  Hier findest du Vorlesungsaufzeichnungen vieler Lehrveranstaltungen. Viele Filme sind freizugänglich, manche über deine IdM Kennung abrufbar und manche können nur in Verbindung mit einem Kurs aus StudOn gesichtet werden.\n- FAUMail: [https://faumail.uni-erlangen.de/](https://faumail.uni-erlangen.de/)\n  Dein E-Mail Postfach für die Dauer deines Studiums. Hier erhältst du automatisch alle Nachrichten von Dozierenden aus StudOn und kannst eine Umleitung zu deiner privaten E-Mailadresse einrichten.\n\nWeitere wichtige Plattformen findest du [hier](https://www.studon.fau.de/studon/goto.php?target=cat_4386525)."
-  
+
   utter_ask_semesterbeitrag_zahlung:
     - text: "Um deinen Semesterbeitrag zu zahlen, findest du die Bankdaten zur Überweisung und weitere wichtige Informationen in „Campo“ im Bereich „Studienservice“ (Register „Bescheinigungen“)."
 
   utter_ask_beitrag_zahlung_bei_studiumsabbruch:
     - text: "Solltest du dein Studium zum Ende des Sommersemesters nicht fortsetzen wollen, ist keine Rückmeldung erforderlich, sprich du musst deinen Beitrag nicht zahlen."
-  
+
   utter_ask_immatrikulationsbescheinigung:
     - text: "Um deine Immatrikulationsbescheinigung zu finden, gehe auf [https://www.campo.fau.de/](https://www.campo.fau.de/) und melde dich an. Im Bereich „Studienservice“ findest du das Register „Bescheinigungen“, wo du auf der rechten Seite die Dokumente finden kannst."
 
@@ -286,7 +285,7 @@ responses:
 
   utter_ask_studienverlauf:
     - text: "Du kannst deinen Studienverlauf auf der Website Campo einsehen. Melde dich auf https://www.campo.fau.de/ an und gehe oben links auf das Menü -> Mein Studium -> Leistungen.\nDort kannst du deinen Studienverlauf einsehen.\nHier ist auch eine ausführliche Anleitung dazu:\n[Anleitung Notenspiegel und Stundenplan](https://www.doc.zuv.fau.de//L2/Anleitungen/Studierende/Deutsch/Notenspiegel_und_Stundenplan.pdf)"
-  
+
   utter_ask_wirtschaftsinformatik:
     - text: "Wirtschaftsinformatik verbindet Informatik und Betriebswirtschaftslehre, um Informationstechnologie in Unternehmen zu nutzen."
 
@@ -298,7 +297,7 @@ responses:
 
   utter_ask_name:
     - text: "Ich bin der Chatbot, und wie heißt du?"
-  
+
   utter_study_advisor:
     - text: "Den Studienberater findest du unter:\n'https://www.wiso.rw.fau.de/studium/im-studium/fachstudienberatung/#collapse_3'"
 
