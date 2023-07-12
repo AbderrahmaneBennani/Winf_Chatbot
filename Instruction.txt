@@ -1,5 +1,0 @@
-Anleitung:
--XAMPP auf dem Rechner installieren
--Rasa installieren
-
-die Ordner dann an die richtige Stelle kopieren und ersetzen (gibt online Tutorials oder fragt ChatGPT)
