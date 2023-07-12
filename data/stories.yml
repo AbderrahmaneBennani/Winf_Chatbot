@@ -1,0 +1,383 @@
+version: "2.0"
+
+stories:
+  - story: Beispielnutzung-Kurs-Anmeldung
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kurs_anmeldung
+      - action: utter_kurs_anmeldung
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: Beispielnutzung-Kurs-Anmeldung-Error
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kurs_anmeldung_error
+      - action: utter_kurs_anmeldung_error
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: Beispielnutzung-Kurs-Abmeldung
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kurs_abmeldung
+      - action: utter_kurs_abmeldung
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: Frage zur Immatrikulation
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: frage_immatrikulation
+      - action: utter_immatrikulation
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: Frage zu den zulassungsfreien Studiengänge
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: frage_zulassungsfrei
+      - action: utter_zulassungsfrei
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: Frage zu den NC-Studiengänge
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: frage_NC
+      - action: utter_NC
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: Frage zu Immatrikulationsunterlagen
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: frage_Unterlagen
+      - action: utter_Unterlagen
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: Frage zu den FAUCard
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: frage_FAUCard
+      - action: utter_FAUCard
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: Personalisierter-Stundenplan
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: personalisierter_stundenplan
+      - action: utter_personalisierter_stundenplan
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: Beispielnutzung-Kurs-Anmeldung-Welche
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kurs_anmeldung_welche
+      - action: utter_kurs_anmeldung_welche
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: FAUCard Functions
+    steps:
+      - intent: faucard_functions
+      - action: utter_faucard_functions
+
+  - story: University Emails
+    steps:
+      - intent: university_emails
+      - action: utter_university_emails
+
+  - story: Exam Registration
+    steps:
+      - intent: exam_registration
+      - action: utter_exam_registration
+
+  - story: Exam Withdrawal
+    steps:
+      - intent: exam_withdrawal
+      - action: utter_exam_withdrawal
+
+  - story: Exam Schedule
+    steps:
+      - intent: exam_schedule
+      - action: utter_exam_schedule
+
+  - story: Exam Schedule Unknown
+    steps:
+      - intent: exam_schedule_unknown
+      - action: utter_exam_schedule_unknown
+
+  - story: Exam Failure Next Steps
+    steps:
+      - intent: exam_failure_next_steps
+      - action: utter_exam_failure_next_steps
+
+  - story: Exam Absence Illness
+    steps:
+      - intent: exam_absence_illness
+      - action: utter_exam_absence_illness
+
+  - story: Exam Period
+    steps:
+      - intent: exam_period
+      - action: utter_exam_period
+
+  - story: Exam Result AN
+    steps:
+      - intent: exam_result_AN
+      - action: utter_exam_result_AN
+
+  - story: Exam Result AR
+    steps:
+      - intent: exam_result_AR
+      - action: utter_exam_result_AR
+
+  - story: Exam Result AT
+    steps:
+      - intent: exam_result_AT
+      - action: utter_exam_result_AT
+
+  - story: Exam Result BE_EB
+    steps:
+      - intent: exam_result_BE_EB
+      - action: utter_exam_result_BE_EB
+
+  - story: Exam Result PV
+    steps:
+      - intent: exam_result_PV
+      - action: utter_exam_result_PV
+
+  - story: Exam Result NB
+    steps:
+      - intent: exam_result_NB
+      - action: utter_exam_result_NB
+
+  - story: Exam Result EN
+    steps:
+      - intent: exam_result_EN
+      - action: utter_exam_result_EN
+
+  - story: Exam Result FR
+    steps:
+      - intent: exam_result_FR
+      - action: utter_exam_result_FR
+
+  - story: Exam Result KO
+    steps:
+      - intent: exam_result_KO
+      - action: utter_exam_result_KO
+
+  - story: Exam Result NE
+    steps:
+      - intent: exam_result_NE
+      - action: utter_exam_result_NE
+
+  - story: Exam Result NT
+    steps:
+      - intent: exam_result_NT
+      - action: utter_exam_result_NT
+
+  - story: Exam Result RT
+    steps:
+      - intent: exam_result_RT
+      - action: utter_exam_result_RT
+
+  - story: Exam Result RW
+    steps:
+      - intent: exam_result_RW
+      - action: utter_exam_result_RW
+
+  - story: Exam Result TA
+    steps:
+      - intent: exam_result_TA
+      - action: utter_exam_result_TA
+
+  - story: Exam Result VM
+    steps:
+      - intent: exam_result_VM
+      - action: utter_exam_result_VM
+
+  - story: Exam Result VO
+    steps:
+      - intent: exam_result_VO
+      - action: utter_exam_result_VO
+
+  - story: Exam Result VOU
+    steps:
+      - intent: exam_result_VOU
+      - action: utter_exam_result_VOU
+
+  - story: Grade Range Very Good
+    steps:
+      - intent: grade_range_very_good
+      - action: utter_grade_range_very_good
+
+  - story: Grade Range Good
+    steps:
+      - intent: grade_range_good
+      - action: utter_grade_range_good
+
+  - story: Grade Range Satisfactory
+    steps:
+      - intent: grade_range_satisfactory
+      - action: utter_grade_range_satisfactory
+
+  - story: Grade Range Sufficient
+    steps:
+      - intent: grade_range_sufficient
+      - action: utter_grade_range_sufficient
+
+  - story: Inquire about the structure of the Wirtschaftsinformatik study program
+    steps:
+      - intent: ask_winf_schedule
+      - action: utter_ask_winf_schedule
+
+  - story: Inquire about the modules of the Wirtschaftsinformatik study program
+    steps:
+      - intent: ask_winf_modules
+      - action: utter_ask_winf_modules
+
+  - story: Inquire about the modules of the GOP in Wirtschaftsinformatik study program
+    steps:
+      - intent: ask_gop_modules
+      - action: utter_ask_gop_modules
+
+  - story: Inquire about the modules in the Informatik area of the Wirtschaftsinformatik study program
+    steps:
+      - intent: ask_informatik_modules
+      - action: utter_ask_informatik_modules
+
+  - story: Inquire about the modules in the Wirtschaftsinformatik area of the study program
+    steps:
+      - intent: ask_ba_modules
+      - action: utter_ask_ba_modules
+  
+  - story: Inquire about the modules in the Methodische Grundlagen area of the study program
+    steps:
+      - intent: ask_methodische_grundlagen_modules
+      - action: utter_ask_methodische_grundlagen_modules
+  
+  - story: Inquire about the modules in the Seminare und Reflexion area of the study program
+    steps:
+      - intent: ask_seminare_reflexion_modules
+      - action: utter_ask_seminare_reflexion_modules
+
+  - story: Inquire about the module in the Bachelorarbeit area of the study program
+    steps:
+      - intent: ask_bachelorarbeit_modules
+      - action: utter_ask_bachelorarbeit_modules
+  
+  - story: Inquire about the total ECTS required in the study program
+    steps:
+      - intent: ask_total_ects
+      - action: utter_total_ects
+  
+  - story: Inquire about the Regelstudienzeit in the study program
+    steps:
+      - intent: ask_regelstudienzeit
+      - action: utter_ask_regelstudienzeit
+
+  - story: Inquire about the possible career fields in Wirtschaftsinformatik
+    steps:
+      - intent: ask_berufsfelder
+      - action: utter_ask_berufsfelder
+
+  - story: Inquire about the admission requirements for the Wirtschaftsinformatik study program
+    steps:
+      - intent: ask_zulassungsfrei
+      - action: utter_ask_zulassungsfrei
+
+  - story: Inquire about the necessity of an internship before starting the study
+    steps:
+      - intent: ask_praktikum_vor_studienbeginn
+      - action: utter_ask_praktikum_vor_studienbeginn
+
+  - story: Inquire about the meaning of FS
+    steps:
+      - intent: ask_bedeutung_fs
+      - action: utter_ask_bedeutung_fs
+
+  - story: Inquire about the meaning of RSZ
+    steps:
+      - intent: ask_bedeutung_rsz
+      - action: utter_ask_bedeutung_rsz
+  
+  - story: Inquire about the meaning of iRSZ
+    steps:
+      - intent: ask_bedeutung_irsz
+      - action: utter_ask_bedeutung_irsz
+  
+  - story: Inquire about the important platforms for studying
+    steps:
+     - intent: ask_wichtige_plattformen
+     - action: utter_ask_wichtige_plattformen
+
+  - story: Inquire about how to pay the semester fee
+    steps:
+     - intent: ask_semesterbeitrag_zahlung
+     - action: utter_ask_semesterbeitrag_zahlung
+
+  - story: Inquire about payment when discontinuing studies
+    steps:
+     - intent: ask_beitrag_zahlung_bei_studiumsabbruch
+     - action: utter_ask_beitrag_zahlung_bei_studiumsabbruch
+
+  - story: Inquire about finding the Immatrikulationsbescheinigung
+    steps:
+     - intent: ask_immatrikulationsbescheinigung
+     - action: utter_ask_immatrikulationsbescheinigung
+
+  - story: User greets and asks for Notenspiegel
+    steps:
+     - intent: ask_notenspiegel
+     - action: utter_ask_notenspiegel
+    
+  - story: User greets and asks for Studienverlauf
+    steps:
+    - intent: ask_studienverlauf
+    - action: utter_ask_studienverlauf
+
+  - story: User greets and asks about Wirtschaftsinformatik
+    steps:
+    - intent: ask_wirtschaftsinformatik
+    - action: utter_ask_wirtschaftsinformatik
+
+  - story: Ask how are you
+    steps:
+    - intent: how_are_you
+    - action: utter_how_are_you
+
+  - story: Introduce and ask for help
+    steps:
+    - intent: introduction
+    - action: utter_introduction
+    
+  - story: Ask name
+    steps:
+    - intent: ask_name
+    - action: utter_ask_name
+  
+  - story: Ask for study advisor
+    steps:
+    - intent: ask_study_advisor
+    - action: utter_study_advisor
+  
+  - story: Ask about module difficulty
+    steps:
+    - intent: ask_module_difficulty
+    - action: utter_module_difficulty
+      

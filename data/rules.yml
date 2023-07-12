@@ -1,0 +1,332 @@
+version: "2.0"
+
+rules:
+  - rule: Beispielfrage-Kurs-Anmeldung
+    steps:
+      - intent: kurs_anmeldung
+      - action: utter_kurs_anmeldung
+
+  - rule: Beispielfrage-Kurs-Anmeldung-Error
+    steps:
+      - intent: kurs_anmeldung_error
+      - action: utter_kurs_anmeldung_error
+
+  - rule: Beispielfrage-Kurs-Abmeldung
+    steps:
+      - intent: kurs_abmeldung
+      - action: utter_kurs_abmeldung
+
+  - rule: Beispielfrage-Personalisierter Stundenplan
+    steps:
+      - intent: personalisierter_stundenplan
+      - action: utter_personalisierter_stundenplan
+
+  - rule: Kurs-Anmeldung-Welche
+    steps:
+      - intent: kurs_anmeldung_welche
+      - action: utter_kurs_anmeldung_welche
+
+  - rule: Standard-Begrüßung
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Standard-Verabschiedung
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+    steps:
+      - intent: nlu_fallback
+      - action: utter_please_rephrase
+
+  - rule: Frage zur Immatrikulation
+    steps:
+      - intent: frage_immatrikulation
+      - action: utter_immatrikulation
+
+  - rule: Frage zu den zulassungsfreien Studiengänge
+    steps:
+      - intent: frage_zulassungsfrei
+      - action: utter_zulassungsfrei
+
+  - rule: Frage zu den NC-Studiengänge
+    steps:
+      - intent: frage_NC
+      - action: utter_NC
+
+  - rule: Frage zu Immatrikulationsunterlagen
+    steps:
+      - intent: frage_Unterlagen
+      - action: utter_Unterlagen
+
+  - rule: Frage zu den FAUCard
+    steps:
+      - intent: frage_FAUCard
+      - action: utter_FAUCard
+
+  - rule: Respond to faucard_functions
+    steps:
+      - intent: faucard_functions
+      - action: utter_faucard_functions
+
+  - rule: Respond to university_emails
+    steps:
+      - intent: university_emails
+      - action: utter_university_emails
+
+  - rule: Respond to exam_registration
+    steps:
+      - intent: exam_registration
+      - action: utter_exam_registration
+
+  - rule: Respond to exam_withdrawal
+    steps:
+      - intent: exam_withdrawal
+      - action: utter_exam_withdrawal
+
+  - rule: Respond to exam_schedule
+    steps:
+      - intent: exam_schedule
+      - action: utter_exam_schedule
+
+  - rule: Reply to exam schedule unknown
+    steps:
+      - intent: exam_schedule_unknown
+      - action: utter_exam_schedule_unknown
+
+  - rule: Reply to exam failure next steps
+    steps:
+      - intent: exam_failure_next_steps
+      - action: utter_exam_failure_next_steps
+
+  - rule: Reply to exam absence illness
+    steps:
+      - intent: exam_absence_illness
+      - action: utter_exam_absence_illness
+
+  - rule: Reply to exam period
+    steps:
+      - intent: exam_period
+      - action: utter_exam_period
+
+  - rule: Reply to exam result AN
+    steps:
+      - intent: exam_result_AN
+      - action: utter_exam_result_AN
+
+  - rule: Reply to exam result AR
+    steps:
+      - intent: exam_result_AR
+      - action: utter_exam_result_AR
+
+  - rule: Reply to exam result AT
+    steps:
+      - intent: exam_result_AT
+      - action: utter_exam_result_AT
+
+  - rule: Reply to exam result BE_EB
+    steps:
+      - intent: exam_result_BE_EB
+      - action: utter_exam_result_BE_EB
+
+  - rule: Reply to exam result PV
+    steps:
+      - intent: exam_result_PV
+      - action: utter_exam_result_PV
+
+  - rule: Reply to exam result NB
+    steps:
+      - intent: exam_result_NB
+      - action: utter_exam_result_NB
+
+  - rule: Respond to exam result EN
+    steps:
+      - intent: exam_result_EN
+      - action: utter_exam_result_EN
+
+  - rule: Respond to exam result FR
+    steps:
+      - intent: exam_result_FR
+      - action: utter_exam_result_FR
+
+  - rule: Respond to exam result KO
+    steps:
+      - intent: exam_result_KO
+      - action: utter_exam_result_KO
+
+  - rule: Respond to exam result NE
+    steps:
+      - intent: exam_result_NE
+      - action: utter_exam_result_NE
+
+  - rule: Respond to exam result NT
+    steps:
+      - intent: exam_result_NT
+      - action: utter_exam_result_NT
+
+  - rule: Respond to exam result RT
+    steps:
+      - intent: exam_result_RT
+      - action: utter_exam_result_RT
+
+  - rule: Respond to exam result RW
+    steps:
+      - intent: exam_result_RW
+      - action: utter_exam_result_RW
+
+  - rule: Respond to exam result TA
+    steps:
+      - intent: exam_result_TA
+      - action: utter_exam_result_TA
+
+  - rule: Respond to exam result VM
+    steps:
+      - intent: exam_result_VM
+      - action: utter_exam_result_VM
+
+  - rule: Respond to exam result VO
+    steps:
+      - intent: exam_result_VO
+      - action: utter_exam_result_VO
+
+  - rule: Respond to exam result VOU
+    steps:
+      - intent: exam_result_VOU
+      - action: utter_exam_result_VOU
+
+  - rule: Respond to grade range very good
+    steps:
+      - intent: grade_range_very_good
+      - action: utter_grade_range_very_good
+
+  - rule: Respond to grade range good
+    steps:
+      - intent: grade_range_good
+      - action: utter_grade_range_good
+
+  - rule: Respond to grade range satisfactory
+    steps:
+      - intent: grade_range_satisfactory
+      - action: utter_grade_range_satisfactory
+
+  - rule: Respond to grade range sufficient
+    steps:
+      - intent: grade_range_sufficient
+      - action: utter_grade_range_sufficient
+
+  - rule: Provide information about Wirtschaftsinformatik study program
+    steps:
+      - intent: ask_winf_schedule
+      - action: utter_ask_winf_schedule
+
+  - rule: Provide information about Wirtschaftsinformatik study modules
+    steps:
+      - intent: ask_winf_modules
+      - action: utter_ask_winf_modules
+
+  - rule: Provide information about Wirtschaftsinformatik study program
+    steps:
+      - intent: ask_winf_schedule
+      - action: utter_ask_winf_schedule
+
+  - rule: Provide information about Wirtschaftsinformatik study modules
+    steps:
+      - intent: ask_winf_modules
+      - action: utter_ask_winf_modules
+
+  - rule: Provide information about GOP modules
+    steps:
+      - intent: ask_gop_modules
+      - action: utter_ask_gop_modules
+
+  - rule: Provide information about Informatik modules
+    steps:
+      - intent: ask_informatik_modules
+      - action: utter_ask_informatik_modules
+
+  - rule: Provide information about Wirtschaftsinformatik modules
+    steps:
+      - intent: ask_ba_modules
+      - action: utter_ask_ba_modules
+
+  - rule: Provide information about Methodische Grundlagen modules
+    steps:
+      - intent: ask_methodische_grundlagen_modules
+      - action: utter_ask_methodische_grundlagen_modules
+
+  - rule: Provide information about Seminare und Reflexion modules
+    steps:
+      - intent: ask_seminare_reflexion_modules
+      - action: utter_ask_seminare_reflexion_modules
+
+  - rule: Provide information about Bachelorarbeit module
+    steps:
+      - intent: ask_bachelorarbeit_modules
+      - action: utter_ask_bachelorarbeit_modules
+
+  - rule: Provide information about total ECTS
+    steps:
+      - intent: ask_total_ects
+      - action: utter_total_ects
+
+  - rule: Provide information about Regelstudienzeit
+    steps:
+      - intent: ask_regelstudienzeit
+      - action: utter_ask_regelstudienzeit
+
+  - rule: Provide information about Berufsfelder in Wirtschaftsinformatik
+    steps:
+      - intent: ask_berufsfelder
+      - action: utter_ask_berufsfelder
+
+  - rule: Provide information about Zulassungsfreiheit in Wirtschaftsinformatik
+    steps:
+      - intent: ask_zulassungsfrei
+      - action: utter_ask_zulassungsfrei
+
+  - rule: Provide information about Praktikum vor Studienbeginn
+    steps:
+      - intent: ask_praktikum_vor_studienbeginn
+      - action: utter_ask_praktikum_vor_studienbeginn
+
+  - rule: Provide information about the meaning of FS
+    steps:
+      - intent: ask_bedeutung_fs
+      - action: utter_ask_bedeutung_fs
+
+  - rule: Provide information about the meaning of RSZ
+    steps:
+      - intent: ask_bedeutung_rsz
+      - action: utter_ask_bedeutung_rsz
+
+  - rule: Provide information about the meaning of iRSZ
+    steps:
+      - intent: ask_bedeutung_irsz
+      - action: utter_ask_bedeutung_irsz
+
+  - rule: Respond to how are you
+    steps:
+      - intent: how_are_you
+      - action: utter_how_are_you
+
+  - rule: Respond to introduction
+    steps:
+      - intent: introduction
+      - action: utter_introduction
+
+  - rule: Respond to introduction
+    steps:
+      - intent: ask_name
+      - action: utter_ask_name
+
+  - rule: Respond to ask study advisor
+    steps:
+      - intent: ask_study_advisor
+      - action: utter_study_advisor
+
+  - rule: Respond to ask module difficulty
+    steps:
+      - intent: ask_module_difficulty
+      - action: utter_module_difficulty

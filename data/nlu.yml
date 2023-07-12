@@ -1,0 +1,489 @@
+version: "2.0"
+
+nlu:
+  - intent: greet
+    examples: |
+      - Hallo
+      - Hi
+      - Guten Tag
+      - Servus
+      - Kannst du mir helfen?
+      - Ich brauche deine Hilfe
+
+  - intent: goodbye
+    examples: |
+      - Auf Wiedersehen
+      - Tschüss
+      - Bis später
+      - Goodbye
+      - ciao
+
+  - intent: kurs_anmeldung
+    examples: |
+      - Wie kann ich mich für meine Kurse anmelden?
+      - Wie melde ich mich für ein Modul an?
+      - Wie melde ich mich für Veranstaltungen an?
+      - Wie melde ich mich an?
+      - Wie kann ich eine Anmeldung für meine Kurse durchführen?
+      - Wie kann ich mich für eine Kurse registrieren?
+      - Wie melde ich mich für meine Kurse an?
+
+  - intent: kurs_anmeldung_error
+    examples: |
+      - Warum kann ich mich nicht für den Kurs anmelden?
+      - Ich bekomme einen Error, wenn ich mich für einen Kurs auf StudOn anmelden will
+      - Die Kursanmeldung funktioniert nicht
+      - Ich kann mich nicht für einen Kurs anmelden
+      - Weshalb ist es mir nicht möglich, mich für den Kurs anzumelden?
+      - Was ist der Grund dafür, dass ich mich nicht für den Kurs anmelden kann?
+      - Warum ist es mir nicht gestattet, mich für den Kurs anzumelden?
+
+  - intent: kurs_abmeldung
+    examples: |
+      - Wie melde ich mich von einem Kurs ab?
+
+  - intent: personalisierter_stundenplan
+    examples: |
+      - Wo bekomme ich einen personalisierten Stundenplan?
+      - Wie kann ich einen eigenen Stundenplan erstellen?
+      - Wo finde ich meinen Stundenplan?
+      - Gibt es automatisierte Stundenpläne?
+      - Ich möchte gerne einen Stundenplan erstellen
+      - Ich brauche einen Stundenplan
+
+  - intent: frage_immatrikulation
+    examples: |
+      - Wie immatrikuliert man sich?
+      - Wie kann ich für Wirtschaftsinformatik immatrikulieren?
+      - Wie kann ich mich einschreiben?
+
+  - intent: frage_zulassungsfrei
+    examples: |
+      - Von wann bis wann kann ich mich für ein zulassungsfreien Studiengang bei der FAU bewerben?
+      - Bis zu welchem Zeitpunkt kann ich meine Bewerbung für einen zulassungsfreien Studiengang an der FAU einreichen?
+      - Welcher ist der Bewerbungsschluss für einen zulassungsfreien Studiengang an der FAU?
+      - Bis zu welchem Datum kann ich mich für einen Studiengang ohne Zulassungsbeschränkungen an der FAU bewerben?
+      - Welches ist das Ende der Bewerbungsfrist für einen zulassungsfreien Studiengang an der FAU?
+      - Ab wann und bis wann besteht die Möglichkeit, sich für einen Studiengang ohne Zulassungsbeschränkungen an der FAU zu bewerben?
+
+  - intent: frage_NC
+    examples: |
+      - Bis zu welchem Zeitpunkt kann ich meine Bewerbung für einen Studiengang mit Numerus Clausus an der FAU einreichen?
+      - Welcher ist der Bewerbungsschluss für einen NC-beschränkten Studiengang an der FAU?
+      - Bis zu welchem Datum kann ich mich für einen Studiengang mit Zulassungsbeschränkungen an der FAU bewerben?
+      - Welches ist das Ende der Bewerbungsfrist für einen Studiengang mit NC an der FAU?
+      - Ab wann und bis wann besteht die Möglichkeit, sich für einen Studiengang mit Zulassungsbeschränkungen an der FAU zu bewerben?
+
+  - intent: frage_Unterlagen
+    examples: |
+      - Welche Unterlagen sind erforderlich, um mich zu Immatrikulieren?
+      - Welche Dokumente sind notwendig, um mich einzuschreiben?
+      - Welche Unterlagen werden für meine Einschreibung benötigt?
+      - Welche Dokumente muss ich vorlegen, um mich einschreiben zu können?
+      - Welche Unterlagen sind erforderlich, um den Einschreibeprozess abzuschließen?
+      - Welche Dokumentation ist notwendig, um meine Einschreibung durchzuführen?
+      - Welche Unterlagen werden von mir verlangt, um mich erfolgreich einzuschreiben?
+
+  - intent: frage_FAUCard
+    examples: |
+      - Woher bekomme ich meine FAU-Card nach der Immatrikulation?
+      - Nach der Immatrikulation, wo kann ich meine FAU-Card erhalten?
+      - Wo kann ich meine FAU-Card nach der Immatrikulation erhalten?
+      - An welchem Ort kann ich meine FAU-Card nach der Immatrikulation abholen?
+      - Nach der Immatrikulation, wo erhalte ich meine FAU-Card?
+      - Wo ist der Ausgabepunkt für die FAU-Card nach der Immatrikulation?
+
+  - intent: kurs_anmeldung_welche
+    examples: |
+      - Wie kann ich herausfinden, für welche Kurse ich mich anmelden muss?
+      - Für welche Kurse muss ich mich anmelden?
+      - Was muss ich im Studium der Wirtschaftsinformatik belegen?
+      - In welche Kurse muss ich?
+      - In welche Module muss ich?
+      - Weißt du welche Fächer ich machen muss?
+
+  - intent: faucard_functions
+    examples: |
+      - Welche Funktionen hat meine FAUcard?
+
+  - intent: university_emails
+    examples: |
+      - An welche E-Mail werden offizielle Mitteilungen der Universität gesendet?
+
+  - intent: exam_registration
+    examples: |
+      - Wie melde ich mich für meine Prüfungen an?
+
+  - intent: exam_withdrawal
+    examples: |
+      - Wie melde ich mich von einer Prüfung ab?
+
+  - intent: exam_schedule
+    examples: |
+      - Wann und wo werden meine Prüfungen stattfinden?
+
+  - intent: exam_schedule_unknown
+    examples: |
+      - Warum ist der Prüfungstermin und/oder Prüfungsort noch nicht bekannt?
+      - Wann finde ich Informationen zum Prüfungstermin und -ort?
+      - Wo kann ich den Prüfungstermin und -ort einsehen?
+      - Prüfungstermin und -ort unbekannt
+      - Wo und wann finden meine Prüfungen statt?
+
+  - intent: exam_failure_next_steps
+    examples: |
+      - Ich habe eine Prüfung nicht bestanden, was soll ich jetzt tun?
+      - Wie geht es weiter, wenn ich eine Prüfung nicht bestehe?
+      - Was passiert nach dem Nichtbestehen einer Prüfung?
+      - Welche Schritte sind nach dem Nichtbestehen einer Prüfung erforderlich?
+
+  - intent: exam_absence_illness
+    examples: |
+      - Was mache ich, wenn ich am Prüfungstag krank bin?
+      - Was soll ich tun, wenn ich krankheitsbedingt nicht zur Prüfung kommen kann?
+      - Wie gehe ich vor, wenn ich am Prüfungstag krankheitsbedingt abwesend bin?
+      - Prüfung abwesend wegen Krankheit
+
+  - intent: exam_period
+    examples: |
+      - In welchem Zeitraum finden die Prüfungen statt?
+      - Wann sind die Prüfungstermine?
+      - Welche Zeiträume sind für die Prüfungen vorgesehen?
+      - Wann finden die Prüfungen statt?
+
+  - intent: exam_result_AN
+    examples: |
+      - Was bedeutet AN?
+      - Was wird mit annullierte Leistung gemeint?
+      - AN in Bezug auf Prüfungsergebnisse
+      - Erklärung für den Begriff AN
+
+  - intent: exam_result_AR
+    examples: |
+      - Was bedeutet AR?
+      - Was wird mit angerechnete Leistung gemeint?
+      - AR in Bezug auf Prüfungsergebnisse
+      - Erklärung für den Begriff AR
+
+  - intent: exam_result_AT
+    examples: |
+      - Was bedeutet AT?
+      - Was wird mit Attest gemeint?
+      - AT in Bezug auf Prüfungsergebnisse
+      - Erklärung für den Begriff AT
+
+  - intent: exam_result_BE_EB
+    examples: |
+      - Was bedeutet BE,EB?
+      - Was wird mit bestanden und ein + bei 'Note' vermerkt gemeint?
+      - BE,EB in Bezug auf Prüfungsergebnisse
+      - Erklärung für den Begriff BE,EB
+
+  - intent: exam_result_PV
+    examples: |
+      - Was bedeutet PV?
+      - Was wird mit Prüfung vorhanden gemeint?
+      - PV in Bezug auf Prüfungsergebnisse
+      - Erklärung für den Begriff PV
+
+  - intent: exam_result_NB
+    examples: |
+      - Was bedeutet NB?
+      - Was wird mit nicht bestanden und ein - bei 'Note' vermerkt gemeint?
+      - NB in Bezug auf Prüfungsergebnisse
+      - Erklärung für den Begriff NB
+
+  - intent: exam_result_EN
+    examples: |
+      - Was bedeutet EN?
+      - Was heißt EN?
+      - Was ist die Bedeutung von EN?
+      - Was heißt endgültig nicht bestanden?
+
+  - intent: exam_result_FR
+    examples: |
+      - Was bedeutet FR?
+      - Was heißt FR?
+      - Was ist die Bedeutung von FR?
+      - Was heißt Fristüberschreitung?
+
+  - intent: exam_result_KO
+    examples: |
+      - Was bedeutet KO?
+      - Was heißt KO?
+      - Was ist die Bedeutung von KO?
+      - Was heißt Prüfungsverfahren ausgesetzt?
+
+  - intent: exam_result_NE
+    examples: |
+      - Was bedeutet NE?
+      - Was heißt NE?
+      - Was ist die Bedeutung von NE?
+      - Was heißt nicht erschienen (Anmeldung erloschen)?
+
+  - intent: exam_result_NT
+    examples: |
+      - Was bedeutet NT?
+      - Was heißt NT?
+      - Was ist die Bedeutung von NT?
+      - Was heißt Anwesenheit in der Lehrveranstaltung nicht erfüllt?
+
+  - intent: exam_result_RT
+    examples: |
+      - Was bedeutet RT?
+      - Was heißt RT?
+      - Was ist die Bedeutung von RT?
+      - Was heißt Rücktritt?
+
+  - intent: exam_result_RW
+    examples: |
+      - Was bedeutet RW?
+      - Was heißt RW?
+      - Was ist die Bedeutung von RW?
+      - Was heißt Rückweisung?
+
+  - intent: exam_result_TA
+    examples: |
+      - Was bedeutet TA?
+      - Was heißt TA?
+      - Was ist die Bedeutung von TA?
+      - Was heißt Täuschung?
+
+  - intent: exam_result_VM
+    examples: |
+      - Was bedeutet VM?
+      - Was heißt VM?
+      - Was ist die Bedeutung von VM?
+      - Was heißt Versäumnis mit Grund?
+
+  - intent: exam_result_VO
+    examples: |
+      - Was bedeutet VO?
+      - Was heißt VO?
+      - Was ist die Bedeutung von VO?
+      - Was heißt Versäumnis ohne Grund (bei bewerteten Leistungen)?
+
+  - intent: exam_result_VOU
+    examples: |
+      - Was bedeutet VOU?
+      - Was heißt VOU?
+      - Was ist die Bedeutung von VOU?
+      - Was heißt Versäumnis ohne Grund (bei unbewerteten Leistungen)?
+
+  - intent: grade_range_very_good
+    examples: |
+      - Welcher Notenschnitt zählt als sehr gut?
+      - Welche Noten gelten als sehr gut?
+      - Welche Notenskala hat die Bewertung "sehr gut"?
+      - Was sind die Anforderungen für die Note "sehr gut"?
+
+  - intent: grade_range_good
+    examples: |
+      - Welcher Notenschnitt zählt als gut?
+      - Welche Noten gelten als gut?
+      - Welche Notenskala hat die Bewertung "gut"?
+      - Was sind die Anforderungen für die Note "gut"?
+
+  - intent: grade_range_satisfactory
+    examples: |
+      - Welcher Notenschnitt zählt als befriedigend?
+      - Welche Noten gelten als befriedig
+
+  - intent: ask_winf_schedule
+    examples: |
+     - Wie ist das Bachelorstudium von Wirtschaftsinformatik aufgebaut?
+  
+  - intent: ask_winf_modules
+    examples: |
+     - Aus welchen Bereichen besteht der Bachelor in Wirtschaftsinformatik laut Modulplan?
+     - Welche Module sind im Wirtschaftsinformatik-Studium enthalten?
+     - Kannst du mir die Bereiche des Bachelorstudiums in Wirtschaftsinformatik nennen?
+     - Welche Fachgebiete umfasst der Wirtschaftsinformatik-Studiengang?
+
+  - intent: ask_gop_modules
+    examples: |
+     - Zu welchen Modulen gehört die Grundlagen- und Orientierungsphase (GOP)?
+     - Welche Kurse sind Teil der GOP im Wirtschaftsinformatik-Studium?
+     - Kannst du mir die Module der Grundlagen- und Orientierungsphase nennen?
+     - Welche Fachgebiete werden in der GOP behandelt?
+     - Was sind die grundlegenden Module des Wirtschaftsinformatik-Studiums?
+
+  - intent: ask_informatik_modules
+    examples: |
+     - Zu welchen Modulen gehört der Bereich Informatik?
+     - Welche Kurse sind Teil des Informatik-Bereichs im Wirtschaftsinformatik-Studium?
+     - Kannst du mir die Module im Bereich Informatik nennen?
+     - Welche Fachgebiete werden in der Informatik behandelt?
+     - Welche Module gehören zum Pflichtbereich Informatik?
+     - Was sind die Wahlpflichtmodule im Bereich Informatik?
+  
+  - intent: ask_ba_modules
+    examples: |
+     - Zu welchen Modulen gehört der Bereich Wirtschaftsinformatik?
+     - Welche Kurse sind Teil des Wirtschaftsinformatik-Bereichs im Studium?
+     - Kannst du mir die Module im Bereich Wirtschaftsinformatik nennen?
+     - Welche Fachgebiete werden in der Wirtschaftsinformatik behandelt?
+     - Welche Module gehören zum Pflichtbereich Wirtschaftsinformatik?
+     - Was sind die Wahlpflichtmodule im Bereich Wirtschaftsinformatik?
+  
+  - intent: ask_methodische_grundlagen_modules
+    examples: |
+     - Zu welchen Modulen gehört der Bereich Methodische Grundlagen?
+     - Welche Kurse sind Teil des Methodische Grundlagen-Bereichs im Studium?
+     - Kannst du mir die Module im Bereich Methodische Grundlagen nennen?
+     - Welche Fachgebiete werden in den Methodische Grundlagen behandelt?
+     - Welche Module gehören zum Pflichtbereich Methodische Grundlagen?
+     - Was sind die Wahlpflichtmodule im Bereich Methodische Grundlagen?
+
+  - intent: ask_seminare_reflexion_modules
+    examples: |
+     - Zu welchen Modulen gehört der Bereich Seminare und Reflexion?
+     - Welche Kurse sind Teil des Bereichs Seminare und Reflexion im Studium?
+     - Kannst du mir die Module im Bereich Seminare und Reflexion nennen?
+     - Welche Module werden im Bereich Seminare und Reflexion angeboten?
+     - Welche Seminare und Reflexionsmodule gibt es im Studium?
+
+  - intent: ask_bachelorarbeit_modules
+    examples: |
+     - Zu welchem Modul gehört der Bereich Bachelorarbeit?
+     - Welches Modul ist Teil der Bachelorarbeit im Studium?
+     - Kannst du mir das Modul im Bereich Bachelorarbeit nennen?
+     - Welches Modul beinhaltet die Bachelorarbeit?
+
+  - intent: ask_total_ects
+    examples: |
+     - Wie viele ECTS-Punkte müssen im gesamten Studium erreicht werden?
+     - Wie viele ECTS sind für das Studium insgesamt erforderlich?
+     - Wie viele Leistungspunkte werden für das gesamte Studium benötigt?
+
+  - intent: ask_regelstudienzeit
+    examples: |
+     - Wie lange geht die Regelstudienzeit?
+     - Wie viele Semester dauert das Regelstudium?
+     - Wie lang ist die typische Studiendauer?
+  
+  - intent: ask_berufsfelder
+    examples: |
+     - Welche Berufsfelder sind in Wirtschaftsinformatik möglich?
+     - Welche Karrieremöglichkeiten gibt es in der Wirtschaftsinformatik?
+     - In welchen Bereichen können Wirtschaftsinformatiker/-innen arbeiten?
+     - Was sind typische Berufsfelder für Absolventen der Wirtschaftsinformatik?
+     - Welche Jobaussichten gibt es in der Wirtschaftsinformatik?
+
+  - intent: ask_zulassungsfrei
+    examples: |
+     - Ist der Studiengang Wirtschaftsinformatik zulassungsfrei?
+     - Gibt es eine Zulassungsbeschränkung für Wirtschaftsinformatik?
+     - Muss man sich für das Studium der Wirtschaftsinformatik bewerben?
+     - Wie sieht es mit der Zulassung zum Wirtschaftsinformatik-Studium aus?
+     - Gibt es einen NC für Wirtschaftsinformatik?
+
+  - intent: ask_praktikum_vor_studienbeginn
+    examples: |
+     - Ist ein Praktikum vor Studienbeginn erforderlich?
+     - Muss man vor Studienbeginn ein Praktikum absolvieren?
+     - Gibt es eine Praktikumsverpflichtung vor dem Studium?
+     - Ist es empfehlenswert, vor Studienbeginn ein Praktikum zu machen?
+
+  - intent: ask_bedeutung_fs
+    examples: |
+     - Was bedeutet FS?
+     - Wofür steht FS?
+     - Kannst du mir die Abkürzung FS erklären?
+     - Was wird mit Fachsemester gemeint?
+
+  - intent: ask_bedeutung_rsz
+    examples: |
+     - Was bedeutet RSZ?
+     - Wofür steht RSZ?
+     - Kannst du mir die Abkürzung RSZ erklären?
+     - Was ist die Regelstudienzeit eines Studiengangs?
+
+  - intent: ask_bedeutung_irsz
+    examples: |
+     - Was bedeutet iRSZ?
+     - Wofür steht iRSZ?
+     - Kannst du mir die Abkürzung iRSZ erklären?
+     - Was ist die individuelle Regelstudienzeit?
+
+  - intent: ask_wichtige_plattformen
+    examples: |
+     - Welche Plattformen sind wichtig für das Studium?
+     - Welche Online-Plattformen werden im Studium verwendet?
+     - Wo finde ich wichtige Informationen für das Studium?
+     - Kannst du mir die relevanten Studienplattformen nennen?
+
+  - intent: ask_semesterbeitrag_zahlung
+    examples: |
+     - Wie kann ich meinen Semesterbeitrag bezahlen?
+     - Wo finde ich die Bankdaten für die Überweisung meines Semesterbeitrags?
+     - Welche Informationen benötige ich für die Zahlung meines Semesterbeitrags?
+     - Wo kann ich meine Beitragszahlungsinformationen finden?
+
+  - intent: ask_beitrag_zahlung_bei_studiumsabbruch
+    examples: |
+     - Muss ich meinen Beitrag zahlen, wenn ich mein Studium nicht fortsetze?
+     - Ist eine Beitragszahlung erforderlich, wenn ich mein Studium abbreche?
+     - Muss ich meinen Semesterbeitrag zahlen, wenn ich mein Studium nicht weiterführe?
+     - Wie sieht es mit der Beitragszahlung aus, wenn ich mein Studium beende?
+
+  - intent: ask_immatrikulationsbescheinigung
+    examples: |
+     - Wo finde ich meine Immatrikulationsbescheinigung?
+     - Wie erhalte ich meine Immatrikulationsbescheinigung?
+     - Wo kann ich meine Immatrikulationsunterlagen finden?
+     - Wie komme ich an meine Immatrikulationsbescheinigung?
+  
+  - intent: ask_notenspiegel
+    examples: |
+     - Wo finde ich meinen Notenspiegel?
+     - Wie kann ich meinen Notenspiegel einsehen?
+     - Woher bekomme ich meine Notenübersicht?
+     - Wie erhalte ich meine Notenbescheinigung?
+  
+  - intent: ask_studienverlauf
+    examples: |
+     - Wo finde ich meinen Studienverlauf?
+     - Wie kann ich meinen Studienverlauf einsehen?
+     - Woher bekomme ich meine Studienverlaufsinformationen?
+     - Wie erhalte ich meinen Studienverlaufsbericht?
+
+  - intent: ask_wirtschaftsinformatik
+    examples: |
+     - Was ist Wirtschaftsinformatik?
+     - Was bedeutet Wirtschaftsinformatik?
+     - Kannst du mir erklären, was Wirtschaftsinformatik ist?
+     - Wie wird Wirtschaftsinformatik definiert?
+
+  - intent: how_are_you
+    examples: |
+      - Wie geht es dir?
+      - Wie ist deine Stimmung?
+
+  - intent: introduction
+    examples: |
+      - Wer bist du?
+      - Was bist du?
+
+  - intent: ask_name
+    examples: |
+      - Wie heißt du?
+      - Wer bist du?
+      - Was ist dein Name?
+  
+  - intent: ask_study_advisor
+    examples: |
+      - Wer ist der Studienberater?
+      - Wo finde ich den Studienberater?
+      - Wer ist das?
+      - Wo finde ich ihn?
+      - Wer ist der Fachberater?
+      - Gibt es einen Fachstudienberater?
+  
+  - intent: ask_module_difficulty
+    examples: |
+      - Ist das Modul schwer?
+      - Wie schwierig ist das Modul?
+      - Ist das schwer?
+      - Ist das Modul machbar? 
+      - Soll ich das machen?
